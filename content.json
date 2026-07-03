@@ -607,23 +607,6 @@
     },
     "types": [
       {
-        "title": "Eventos sociales",
-        "image": "/images/imagen-03-07-26-a-las-1.11 a.m..jpg",
-        "description": "Reuniones, aniversarios y celebraciones familiares en un entorno cálido y privado.",
-        "benefits": [
-          {
-            "item": "Espacios privados"
-          },
-          {
-            "item": "Montaje a tu medida"
-          },
-          {
-            "item": "Estacionamiento incluido"
-          }
-        ],
-        "ctaLabel": "Cotizar evento social"
-      },
-      {
         "title": "Bodas",
         "image": "/images/35d30e3b-7e05-4dc3-92c8-3d99f851bec6.png",
         "description": "Ceremonia en capilla, recepción en jardín o salón y fotografía inolvidable, todo en una sede.",
