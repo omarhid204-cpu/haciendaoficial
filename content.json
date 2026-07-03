@@ -406,7 +406,7 @@
   },
   "gallery": {
     "hero": {
-      "image": "",
+      "image": "/images/438112df-b1d2-48b4-964c-780d07a7dea1.png",
       "title": "Galería",
       "subtitle": "Momentos celebrados en Hacienda San Andrés"
     },
@@ -422,7 +422,7 @@
         "description": "Recepción al aire libre en La Cúpula.",
         "category": "Jardines",
         "type": "image",
-        "image": "",
+        "image": "/images/3ee5a290-0199-4916-8b98-135a78680b5b.png",
         "video": ""
       },
       {
@@ -431,7 +431,7 @@
         "description": "Detalle del Salón Los Arcos.",
         "category": "Salones",
         "type": "image",
-        "image": "",
+        "image": "/images/68d53dd6-292c-4c41-baa3-9ca20551f88f.jpg",
         "video": ""
       },
       {
@@ -440,12 +440,12 @@
         "description": "Enlace en los jardines de la hacienda.",
         "category": "Bodas",
         "type": "image",
-        "image": "",
+        "image": "/images/c0505478-bd45-4edb-ac4c-4baa9571a5cb.png",
         "video": ""
       },
       {
         "active": true,
-        "title": "Vals de XV años",
+        "title": "Secuencia de XV años",
         "description": "Celebración entre luces y naturaleza.",
         "category": "XV años",
         "type": "image",
