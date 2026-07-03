@@ -454,15 +454,6 @@
       },
       {
         "active": true,
-        "title": "Interior de la capilla",
-        "description": "Ceremonia religiosa en La Capilla.",
-        "category": "Capilla",
-        "type": "image",
-        "image": "/images/48b1a98f-d298-4446-86bf-7c5187f4ba8a.png",
-        "video": ""
-      },
-      {
-        "active": true,
         "title": "Mesa principal",
         "description": "Montaje de banquete para boda.",
         "category": "Salones",
