@@ -178,24 +178,30 @@
           },
           {
             "item": "Cenas formales"
+          },
+          {
+            "item": "XV años"
           }
         ],
-        "capacity": "Hasta 250 invitados",
+        "capacity": "Hasta 400 invitados",
         "type": "Salón",
         "video": "",
         "image": "",
         "features": [
           {
-            "item": "Arcos originales de cantera"
+            "item": "Pista de baile"
           },
           {
-            "item": "Espacio climatizado"
+            "item": "Estrado para músicos."
           },
           {
-            "item": "Montaje flexible"
+            "item": "Iluminación arquitectónica en el salón y en el jardín."
           },
           {
             "item": "Iluminación ambiental"
+          },
+          {
+            "item": "Personal de guardarropa y personal de baños."
           }
         ]
       },
