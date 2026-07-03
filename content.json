@@ -358,13 +358,10 @@
       {
         "carousel": [
           {
-            "image": ""
+            "image": "/images/4f039673-559f-4caa-b06d-f70479bfc47e.png"
           },
           {
-            "image": ""
-          },
-          {
-            "image": ""
+            "image": "/images/48b1a98f-d298-4446-86bf-7c5187f4ba8a.png"
           }
         ],
         "shortDescription": "Capilla dentro de la hacienda para celebrar tu ceremonia religiosa sin traslados.",
@@ -388,7 +385,7 @@
         "capacity": "Hasta 80 invitados",
         "type": "Capilla",
         "video": "",
-        "image": "",
+        "image": "/images/48b1a98f-d298-4446-86bf-7c5187f4ba8a.png",
         "features": [
           {
             "item": "Ceremonia dentro de la hacienda"
