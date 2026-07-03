@@ -45,7 +45,7 @@
   },
   "virtualTour": {
     "hero": {
-      "image": "",
+      "image": "/images/logo1.png",
       "title": "Visita Virtual",
       "subtitle": "Recorre la hacienda desde donde estés"
     },
