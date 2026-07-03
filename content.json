@@ -336,20 +336,14 @@
             "item": "Eventos empresariales"
           },
           {
-            "item": "Bodas"
-          },
-          {
             "item": "Conferencias"
           }
         ],
-        "capacity": "Hasta 180 invitados",
+        "capacity": "Hasta 90 invitados",
         "type": "Salón",
         "video": "",
         "image": "",
         "features": [
-          {
-            "item": "Balcones con vista al jardín"
-          },
           {
             "item": "Espacio climatizado"
           },
@@ -357,7 +351,7 @@
             "item": "Ambiente sofisticado"
           },
           {
-            "item": "Ideal para presídium o templete"
+            "item": "Personal de baños."
           }
         ]
       },
