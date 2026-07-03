@@ -108,7 +108,7 @@
           }
         ],
         "shortDescription": "Jardín principal coronado por una cúpula, ideal para recepciones al aire libre de gran formato.",
-        "longDescription": "El Jardín La Cúpula es nuestro espacio insignia al aire libre. Su amplia explanada arbolada y su cúpula central crean un marco inolvidable para ceremonias y recepciones. Perfecto para bodas y XV años que buscan grandeza sin perder la calidez de la naturaleza.",
+        "longDescription": "El Jardín La Cúpula es nuestro espacio insignia al aire libre. Su amplia explanada arbolada y su cúpula central crean un marco inolvidable para ceremonias y recepciones. Perfecto para bodas y XV años que buscan grandeza sin perder la calidez de la naturaleza.\nCarpa con 6 calentadores. \n\nPista de baile. \n\nEstrado para músicos.\nIluminación arquitectónica. \n\nPersonal de guardarropa y personal de baños. \n\nPersonal de seguridad.",
         "active": true,
         "plan": "",
         "name": "Jardín La Cúpula",
@@ -137,10 +137,16 @@
             "item": "Áreas verdes arboladas"
           },
           {
-            "item": "Pista de baile al aire libre"
+            "item": "Pista de baile"
           },
           {
             "item": "Iluminación arquitectónica nocturna"
+          },
+          {
+            "item": "Personal de guardarropa y personal de baños. "
+          },
+          {
+            "item": "Personal de seguridad."
           }
         ]
       },
