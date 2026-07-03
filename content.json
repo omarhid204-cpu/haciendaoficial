@@ -266,13 +266,10 @@
       {
         "carousel": [
           {
-            "image": ""
+            "image": "/images/11adc056-a077-4bbf-a2f5-4c166db1208a.png"
           },
           {
-            "image": ""
-          },
-          {
-            "image": ""
+            "image": "/images/0d2d81d8-ec45-44a2-ba97-379dffff20d0.png"
           }
         ],
         "shortDescription": "Salón íntimo y acogedor, perfecto para celebraciones familiares y reuniones cercanas.",
@@ -296,7 +293,7 @@
         "capacity": "Hasta 50 invitados",
         "type": "Salón",
         "video": "",
-        "image": "",
+        "image": "/images/11adc056-a077-4bbf-a2f5-4c166db1208a.png",
         "features": [
           {
             "item": "Ambiente íntimo"
@@ -315,13 +312,10 @@
       {
         "carousel": [
           {
-            "image": ""
+            "image": "/images/f7e2f956-763e-4df1-92e4-974ca74c9104.png"
           },
           {
-            "image": ""
-          },
-          {
-            "image": ""
+            "image": "/images/0f3dc0cb-aa26-45c1-ac09-381c84612fea.png"
           }
         ],
         "shortDescription": "Salón con balcones y vista a los jardines, elegante para eventos sociales y corporativos.",
@@ -342,7 +336,7 @@
         "capacity": "Hasta 90 invitados",
         "type": "Salón",
         "video": "",
-        "image": "",
+        "image": "/images/0f3dc0cb-aa26-45c1-ac09-381c84612fea.png",
         "features": [
           {
             "item": "Espacio climatizado"
