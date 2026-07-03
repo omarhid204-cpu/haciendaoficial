@@ -1,6 +1,93 @@
 {
+  "contact": {
+    "hero": {
+      "image": "",
+      "title": "Contacto",
+      "subtitle": "Estamos listos para ayudarte a planear tu evento"
+    },
+    "info": {
+      "address": "Atlacomulco No. 1, Col. San Esteban, Naucalpan, Estado de México.",
+      "phone": "55 53 57 28 33",
+      "email": "eventos@haciendasanandres.com.mx",
+      "hours": "Lunes a domingo, 9:00 a 19:00 hrs (previa cita)."
+    },
+    "mapEmbed": "https://www.google.com/maps?q=Atlacomulco%201%2C%20San%20Esteban%2C%20Naucalpan&output=embed",
+    "formTitle": "Cuéntanos sobre tu evento",
+    "formText": "Completa el formulario y un asesor te contactará para resolver tus dudas y agendar tu visita.",
+    "eventTypes": [
+      {
+        "item": "Boda"
+      },
+      {
+        "item": "XV años"
+      },
+      {
+        "item": "Bautizo"
+      },
+      {
+        "item": "Graduación"
+      },
+      {
+        "item": "Evento empresarial"
+      },
+      {
+        "item": "Conferencia"
+      },
+      {
+        "item": "Otro"
+      }
+    ],
+    "whatsappLabel": "Escríbenos por WhatsApp",
+    "visitBlock": {
+      "title": "Agenda tu visita",
+      "text": "La mejor forma de elegir tu espacio es conocerlo. Agenda un recorrido guiado por la hacienda, sin compromiso."
+    }
+  },
+  "virtualTour": {
+    "hero": {
+      "image": "",
+      "title": "Visita Virtual",
+      "subtitle": "Recorre la hacienda desde donde estés"
+    },
+    "intro": {
+      "title": "Conoce cada espacio antes de venir",
+      "text": "Te invitamos a recorrer los jardines, salones y la capilla a través de nuestros videos. Y cuando estés listo, agenda tu visita presencial para vivirlo en persona."
+    },
+    "mainVideo": "",
+    "tours": [
+      {
+        "title": "Recorrido por los jardines",
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "Recorrido por los salones",
+        "image": "",
+        "video": ""
+      },
+      {
+        "title": "Recorrido por la capilla",
+        "image": "",
+        "video": ""
+      }
+    ],
+    "cta": {
+      "title": "¿Listo para verlo en persona?",
+      "whatsappLabel": "Agendar por WhatsApp",
+      "visitLabel": "Agendar visita"
+    }
+  },
+  "promotion": {
+    "active": true,
+    "buttonLabel": "Promoción del mes",
+    "title": "Promoción de temporada",
+    "description": "Reserva tu fecha de boda o XV años con seis meses de anticipación y recibe un paquete de cortesías: prueba de menú para dos personas, hora extra de jardín y montaje de mesa principal sin costo.",
+    "image": "",
+    "ctaLabel": "Quiero esta promoción",
+    "ctaLink": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20la%20promoci%C3%B3n%20del%20mes"
+  },
   "site": {
-    "logo": "images/logo.png",
+    "logo": "/images/a9858466-cc54-4542-be80-3a34a1f8100b.png",
     "title": "Hacienda San Andrés",
     "seoTitle": "Hacienda San Andrés | Salón de eventos, bodas y XV años en Naucalpan",
     "seoDescription": "Hacienda histórica desde 1894 con jardines, salones y capilla en un solo lugar. Bodas, XV años, eventos sociales y empresariales en Naucalpan, Estado de México.",
@@ -12,23 +99,313 @@
     "primary": "#14233B",
     "accent": "#B68D4C"
   },
-  "navigation": [
-    { "label": "Inicio", "target": "home" },
-    { "label": "Nuestra Historia", "target": "history" },
-    { "label": "Espacios", "target": "spaces" },
-    { "label": "Eventos", "target": "events" },
-    { "label": "Galería", "target": "gallery" },
-    { "label": "Visita Virtual", "target": "tour" },
-    { "label": "Contacto", "target": "contact" }
-  ],
-  "promotion": {
-    "active": true,
-    "buttonLabel": "Promoción del mes",
-    "title": "Promoción de temporada",
-    "description": "Reserva tu fecha de boda o XV años con seis meses de anticipación y recibe un paquete de cortesías: prueba de menú para dos personas, hora extra de jardín y montaje de mesa principal sin costo.",
-    "image": "",
-    "ctaLabel": "Quiero esta promoción",
-    "ctaLink": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20la%20promoci%C3%B3n%20del%20mes"
+  "spaces": {
+    "hero": {
+      "image": "",
+      "title": "Espacios",
+      "subtitle": "Jardines, salones y capilla para cada tipo de celebración"
+    },
+    "intro": {
+      "eyebrow": "Elige tu escenario",
+      "title": "Un espacio para cada historia",
+      "text": "Cada área de la hacienda tiene su propia personalidad. Filtra por tipo de espacio y descubre cuál se adapta mejor a tu evento, número de invitados y estilo."
+    },
+    "items": [
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "Jardín principal coronado por una cúpula, ideal para recepciones al aire libre de gran formato.",
+        "longDescription": "El Jardín La Cúpula es nuestro espacio insignia al aire libre. Su amplia explanada arbolada y su cúpula central crean un marco inolvidable para ceremonias y recepciones. Perfecto para bodas y XV años que buscan grandeza sin perder la calidez de la naturaleza.",
+        "active": true,
+        "plan": "",
+        "name": "Jardín La Cúpula",
+        "slug": "jardin-la-cupula",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Jard%C3%ADn%20La%20C%C3%BApula",
+        "idealFor": [
+          {
+            "item": "Bodas"
+          },
+          {
+            "item": "XV años"
+          },
+          {
+            "item": "Recepciones de gran formato"
+          }
+        ],
+        "capacity": "Hasta 400 invitados",
+        "type": "Jardín",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Cúpula central iluminada"
+          },
+          {
+            "item": "Áreas verdes arboladas"
+          },
+          {
+            "item": "Pista de baile al aire libre"
+          },
+          {
+            "item": "Iluminación arquitectónica nocturna"
+          }
+        ]
+      },
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "Salón cerrado con arcos de cantera, elegante y climatizado para cualquier temporada.",
+        "longDescription": "Los arcos de cantera dan nombre y carácter a este salón. Es un espacio cubierto y climatizado que conserva el sello histórico de la hacienda, ideal cuando se busca un evento resguardado sin renunciar a la atmósfera tradicional.",
+        "active": true,
+        "plan": "",
+        "name": "Salón Los Arcos",
+        "slug": "salon-los-arcos",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Arcos",
+        "idealFor": [
+          {
+            "item": "Bodas"
+          },
+          {
+            "item": "Eventos empresariales"
+          },
+          {
+            "item": "Cenas formales"
+          }
+        ],
+        "capacity": "Hasta 250 invitados",
+        "type": "Salón",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Arcos originales de cantera"
+          },
+          {
+            "item": "Espacio climatizado"
+          },
+          {
+            "item": "Montaje flexible"
+          },
+          {
+            "item": "Iluminación ambiental"
+          }
+        ]
+      },
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "El jardín más extenso de la hacienda, abierto y luminoso, para celebraciones numerosas.",
+        "longDescription": "Los Campos es nuestro jardín de mayor capacidad. Su superficie abierta permite montajes amplios, ceremonias al aire libre y grandes recepciones. La naturaleza es la protagonista y enmarca cada momento de tu evento.",
+        "active": true,
+        "plan": "",
+        "name": "Jardín Los Campos",
+        "slug": "jardin-los-campos",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Jard%C3%ADn%20Los%20Campos",
+        "idealFor": [
+          {
+            "item": "Bodas numerosas"
+          },
+          {
+            "item": "Graduaciones"
+          },
+          {
+            "item": "Eventos masivos"
+          }
+        ],
+        "capacity": "Hasta 500 invitados",
+        "type": "Jardín",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Mayor capacidad al aire libre"
+          },
+          {
+            "item": "Amplias áreas verdes"
+          },
+          {
+            "item": "Espacio para ceremonia y recepción"
+          },
+          {
+            "item": "Vistas naturales para fotografía"
+          }
+        ]
+      },
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "Salón íntimo y acogedor, perfecto para celebraciones familiares y reuniones cercanas.",
+        "longDescription": "Los Pajaritos es el espacio ideal para eventos más íntimos. Su escala cálida crea cercanía entre los invitados, perfecto para bautizos, cumpleaños y reuniones donde cada detalle se vive de cerca.",
+        "active": true,
+        "plan": "",
+        "name": "Salón Los Pajaritos",
+        "slug": "salon-los-pajaritos",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Pajaritos",
+        "idealFor": [
+          {
+            "item": "Bautizos"
+          },
+          {
+            "item": "Cumpleaños"
+          },
+          {
+            "item": "Reuniones familiares"
+          }
+        ],
+        "capacity": "Hasta 120 invitados",
+        "type": "Salón",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Ambiente íntimo"
+          },
+          {
+            "item": "Espacio cubierto"
+          },
+          {
+            "item": "Montaje cálido"
+          },
+          {
+            "item": "Acceso cómodo"
+          }
+        ]
+      },
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "Salón con balcones y vista a los jardines, elegante para eventos sociales y corporativos.",
+        "longDescription": "Los Balcones combina la comodidad de un salón cerrado con la vista privilegiada hacia los jardines de la hacienda. Es una opción sofisticada para eventos sociales y empresariales que buscan distinción.",
+        "active": true,
+        "plan": "",
+        "name": "Salón Los Balcones",
+        "slug": "salon-los-balcones",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Balcones",
+        "idealFor": [
+          {
+            "item": "Eventos empresariales"
+          },
+          {
+            "item": "Bodas"
+          },
+          {
+            "item": "Conferencias"
+          }
+        ],
+        "capacity": "Hasta 180 invitados",
+        "type": "Salón",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Balcones con vista al jardín"
+          },
+          {
+            "item": "Espacio climatizado"
+          },
+          {
+            "item": "Ambiente sofisticado"
+          },
+          {
+            "item": "Ideal para presídium o templete"
+          }
+        ]
+      },
+      {
+        "carousel": [
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          },
+          {
+            "image": ""
+          }
+        ],
+        "shortDescription": "Capilla dentro de la hacienda para celebrar tu ceremonia religiosa sin traslados.",
+        "longDescription": "La Capilla permite vivir la ceremonia religiosa dentro de la misma propiedad, sin necesidad de trasladar a tus invitados. Un recinto con recogimiento y elegancia, a pasos de los jardines y salones donde continuará la fiesta.",
+        "active": true,
+        "plan": "",
+        "name": "La Capilla",
+        "slug": "la-capilla",
+        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20La%20Capilla",
+        "idealFor": [
+          {
+            "item": "Bodas religiosas"
+          },
+          {
+            "item": "Bautizos"
+          },
+          {
+            "item": "Primeras comuniones"
+          }
+        ],
+        "capacity": "Hasta 150 invitados",
+        "type": "Capilla",
+        "video": "",
+        "image": "",
+        "features": [
+          {
+            "item": "Ceremonia dentro de la hacienda"
+          },
+          {
+            "item": "Sin traslados para tus invitados"
+          },
+          {
+            "item": "Ambiente solemne y elegante"
+          },
+          {
+            "item": "A pasos de jardines y salones"
+          }
+        ]
+      }
+    ]
   },
   "whatsapp": {
     "active": true,
@@ -37,68 +414,91 @@
     "bubbleText": "¿Agendamos tu visita?",
     "showBubble": true
   },
-  "home": {
+  "gallery": {
     "hero": {
-      "slides": [
-        { "image": "", "title": "El día más importante de tu vida, en un solo lugar", "subtitle": "Hacienda histórica, jardines y capilla en Naucalpan desde 1894" },
-        { "image": "", "title": "Bodas que se recuerdan toda la vida", "subtitle": "Jardines abiertos, salones elegantes y atención personalizada" },
-        { "image": "", "title": "Celebra tus XV años entre arcos y jardines", "subtitle": "Espacios privados con la calidez de una hacienda tradicional" }
-      ],
-      "primaryCtaLabel": "Agenda una visita",
-      "primaryCtaTarget": "contact",
-      "secondaryCtaLabel": "Conoce los espacios",
-      "secondaryCtaTarget": "spaces"
-    },
-    "emotional": {
-      "phrase": "El día más importante de tu vida, en un solo lugar."
+      "image": "",
+      "title": "Galería",
+      "subtitle": "Momentos celebrados en Hacienda San Andrés"
     },
     "intro": {
-      "eyebrow": "Una sola sede",
-      "title": "Hacienda, jardines y capilla en un solo lugar",
-      "text": "Hacienda San Andrés reúne todo lo que tu evento necesita dentro de la misma propiedad: jardines amplios, salones para cualquier clima, una capilla para tu ceremonia y áreas privadas para tus invitados. Sin traslados, sin prisas, sin compartir el espacio con otro evento.",
-      "image": "",
-      "ctaLabel": "Descubre la hacienda",
-      "ctaTarget": "history"
+      "eyebrow": "Inspírate",
+      "title": "Una mirada a nuestras celebraciones",
+      "text": "Explora jardines, salones y eventos reales. Filtra por categoría para encontrar la inspiración que buscas."
     },
-    "highlights": [
-      { "title": "Salones", "text": "Espacios climatizados y versátiles, listos para cualquier estación del año y todo tipo de montaje.", "target": "spaces" },
-      { "title": "Jardines", "text": "Áreas verdes abiertas, rodeadas de naturaleza, ideales para ceremonias y recepciones al aire libre.", "target": "spaces" },
-      { "title": "Capilla", "text": "Un recinto propio dentro de la hacienda para celebrar tu ceremonia religiosa con intimidad.", "target": "spaces" }
-    ],
-    "eventsSection": {
-      "eyebrow": "Cada celebración tiene su lugar",
-      "title": "Eventos que celebramos",
-      "text": "Desde la boda soñada hasta la reunión empresarial más exigente, adaptamos la hacienda a tu historia.",
-      "cards": [
-        { "title": "Bodas", "image": "" },
-        { "title": "XV años", "image": "" },
-        { "title": "Graduaciones", "image": "" },
-        { "title": "Bautizos", "image": "" },
-        { "title": "Empresariales", "image": "" },
-        { "title": "Cumpleaños", "image": "" }
-      ]
-    },
-    "experience": {
-      "eyebrow": "La experiencia Hacienda San Andrés",
-      "title": "Una tradición que se siente desde que entras",
-      "items": [
-        { "title": "Historia desde 1894", "text": "Más de un siglo recibiendo celebraciones entre muros, arcos y jardines con carácter propio." },
-        { "title": "Ubicación privilegiada", "text": "En el corazón de Naucalpan, con acceso sencillo y estacionamiento dentro de la propiedad." },
-        { "title": "Naturaleza viva", "text": "Jardines arbolados y áreas verdes que enmarcan cada fotografía de tu evento." },
-        { "title": "Espacios privados", "text": "Tu evento es el único del día: disfrutas la hacienda completa sin interrupciones." },
-        { "title": "Atención personalizada", "text": "Un equipo que acompaña cada decisión, desde la primera visita hasta el último brindis." }
-      ]
-    },
-    "spacesCarousel": {
-      "eyebrow": "Recorre la hacienda",
-      "title": "Nuestros espacios"
-    },
-    "finalCta": {
-      "title": "Agenda una visita a la hacienda",
-      "text": "Conoce los jardines, los salones y la capilla en persona. Te recibimos con una visita guiada sin compromiso.",
-      "whatsappLabel": "Escríbenos por WhatsApp",
-      "contactLabel": "Ir a contacto"
-    }
+    "items": [
+      {
+        "active": true,
+        "title": "Jardín al atardecer",
+        "description": "Recepción al aire libre en La Cúpula.",
+        "category": "Jardines",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Arcos de cantera",
+        "description": "Detalle del Salón Los Arcos.",
+        "category": "Salones",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Ceremonia de boda",
+        "description": "Enlace en los jardines de la hacienda.",
+        "category": "Bodas",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Vals de XV años",
+        "description": "Celebración entre luces y naturaleza.",
+        "category": "XV años",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Montaje corporativo",
+        "description": "Evento empresarial en Los Balcones.",
+        "category": "Empresariales",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Interior de la capilla",
+        "description": "Ceremonia religiosa en La Capilla.",
+        "category": "Capilla",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Mesa principal",
+        "description": "Montaje de banquete para boda.",
+        "category": "Montajes",
+        "type": "image",
+        "image": "",
+        "video": ""
+      },
+      {
+        "active": true,
+        "title": "Jardín Los Campos",
+        "description": "Gran recepción al aire libre.",
+        "category": "Jardines",
+        "type": "image",
+        "image": "",
+        "video": ""
+      }
+    ]
   },
   "history": {
     "hero": {
@@ -117,22 +517,58 @@
       "image": ""
     },
     "timeline": [
-      { "year": "1894", "title": "Fundación de la hacienda", "text": "Se establece la finca original que con el tiempo daría vida a Hacienda San Andrés." },
-      { "year": "1950", "title": "Primeras grandes celebraciones", "text": "Los jardines comienzan a recibir bodas y fiestas familiares de la zona de Naucalpan." },
-      { "year": "1990", "title": "Consolidación como salón de eventos", "text": "Se habilitan salones y la capilla para ofrecer una sede completa para todo tipo de evento." },
-      { "year": "Actualidad", "title": "Una hacienda renovada", "text": "Espacios modernizados, atención personalizada y experiencias a la medida sin perder la esencia histórica." }
+      {
+        "year": "1894",
+        "title": "Fundación de la hacienda",
+        "text": "Se establece la finca original que con el tiempo daría vida a Hacienda San Andrés."
+      },
+      {
+        "year": "1950",
+        "title": "Primeras grandes celebraciones",
+        "text": "Los jardines comienzan a recibir bodas y fiestas familiares de la zona de Naucalpan."
+      },
+      {
+        "year": "1990",
+        "title": "Consolidación como salón de eventos",
+        "text": "Se habilitan salones y la capilla para ofrecer una sede completa para todo tipo de evento."
+      },
+      {
+        "year": "Actualidad",
+        "title": "Una hacienda renovada",
+        "text": "Espacios modernizados, atención personalizada y experiencias a la medida sin perder la esencia histórica."
+      }
     ],
     "values": [
-      { "title": "Elegancia", "text": "Cuidamos cada detalle para que tu evento luzca impecable." },
-      { "title": "Tradición", "text": "Honramos más de un siglo de historia en cada celebración." },
-      { "title": "Atención", "text": "Acompañamos tu evento de principio a fin con un equipo dedicado." },
-      { "title": "Naturaleza", "text": "Jardines vivos que dan vida y frescura a cada encuentro." }
+      {
+        "title": "Elegancia",
+        "text": "Cuidamos cada detalle para que tu evento luzca impecable."
+      },
+      {
+        "title": "Tradición",
+        "text": "Honramos más de un siglo de historia en cada celebración."
+      },
+      {
+        "title": "Atención",
+        "text": "Acompañamos tu evento de principio a fin con un equipo dedicado."
+      },
+      {
+        "title": "Naturaleza",
+        "text": "Jardines vivos que dan vida y frescura a cada encuentro."
+      }
     ],
     "gallery": [
-      { "image": "" },
-      { "image": "" },
-      { "image": "" },
-      { "image": "" }
+      {
+        "image": ""
+      },
+      {
+        "image": ""
+      },
+      {
+        "image": ""
+      },
+      {
+        "image": ""
+      }
     ],
     "cta": {
       "title": "Conoce los espacios de la hacienda",
@@ -141,170 +577,36 @@
       "target": "spaces"
     }
   },
-  "spaces": {
-    "hero": {
-      "image": "",
-      "title": "Espacios",
-      "subtitle": "Jardines, salones y capilla para cada tipo de celebración"
+  "navigation": [
+    {
+      "label": "Inicio",
+      "target": "home"
     },
-    "intro": {
-      "eyebrow": "Elige tu escenario",
-      "title": "Un espacio para cada historia",
-      "text": "Cada área de la hacienda tiene su propia personalidad. Filtra por tipo de espacio y descubre cuál se adapta mejor a tu evento, número de invitados y estilo."
+    {
+      "label": "Nuestra Historia",
+      "target": "history"
     },
-    "items": [
-      {
-        "active": true,
-        "name": "Jardín La Cúpula",
-        "slug": "jardin-la-cupula",
-        "type": "Jardín",
-        "capacity": "Hasta 400 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "Jardín principal coronado por una cúpula, ideal para recepciones al aire libre de gran formato.",
-        "longDescription": "El Jardín La Cúpula es nuestro espacio insignia al aire libre. Su amplia explanada arbolada y su cúpula central crean un marco inolvidable para ceremonias y recepciones. Perfecto para bodas y XV años que buscan grandeza sin perder la calidez de la naturaleza.",
-        "features": [
-          { "item": "Cúpula central iluminada" },
-          { "item": "Áreas verdes arboladas" },
-          { "item": "Pista de baile al aire libre" },
-          { "item": "Iluminación arquitectónica nocturna" }
-        ],
-        "idealFor": [
-          { "item": "Bodas" },
-          { "item": "XV años" },
-          { "item": "Recepciones de gran formato" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Jard%C3%ADn%20La%20C%C3%BApula"
-      },
-      {
-        "active": true,
-        "name": "Salón Los Arcos",
-        "slug": "salon-los-arcos",
-        "type": "Salón",
-        "capacity": "Hasta 250 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "Salón cerrado con arcos de cantera, elegante y climatizado para cualquier temporada.",
-        "longDescription": "Los arcos de cantera dan nombre y carácter a este salón. Es un espacio cubierto y climatizado que conserva el sello histórico de la hacienda, ideal cuando se busca un evento resguardado sin renunciar a la atmósfera tradicional.",
-        "features": [
-          { "item": "Arcos originales de cantera" },
-          { "item": "Espacio climatizado" },
-          { "item": "Montaje flexible" },
-          { "item": "Iluminación ambiental" }
-        ],
-        "idealFor": [
-          { "item": "Bodas" },
-          { "item": "Eventos empresariales" },
-          { "item": "Cenas formales" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Arcos"
-      },
-      {
-        "active": true,
-        "name": "Jardín Los Campos",
-        "slug": "jardin-los-campos",
-        "type": "Jardín",
-        "capacity": "Hasta 500 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "El jardín más extenso de la hacienda, abierto y luminoso, para celebraciones numerosas.",
-        "longDescription": "Los Campos es nuestro jardín de mayor capacidad. Su superficie abierta permite montajes amplios, ceremonias al aire libre y grandes recepciones. La naturaleza es la protagonista y enmarca cada momento de tu evento.",
-        "features": [
-          { "item": "Mayor capacidad al aire libre" },
-          { "item": "Amplias áreas verdes" },
-          { "item": "Espacio para ceremonia y recepción" },
-          { "item": "Vistas naturales para fotografía" }
-        ],
-        "idealFor": [
-          { "item": "Bodas numerosas" },
-          { "item": "Graduaciones" },
-          { "item": "Eventos masivos" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Jard%C3%ADn%20Los%20Campos"
-      },
-      {
-        "active": true,
-        "name": "Salón Los Pajaritos",
-        "slug": "salon-los-pajaritos",
-        "type": "Salón",
-        "capacity": "Hasta 120 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "Salón íntimo y acogedor, perfecto para celebraciones familiares y reuniones cercanas.",
-        "longDescription": "Los Pajaritos es el espacio ideal para eventos más íntimos. Su escala cálida crea cercanía entre los invitados, perfecto para bautizos, cumpleaños y reuniones donde cada detalle se vive de cerca.",
-        "features": [
-          { "item": "Ambiente íntimo" },
-          { "item": "Espacio cubierto" },
-          { "item": "Montaje cálido" },
-          { "item": "Acceso cómodo" }
-        ],
-        "idealFor": [
-          { "item": "Bautizos" },
-          { "item": "Cumpleaños" },
-          { "item": "Reuniones familiares" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Pajaritos"
-      },
-      {
-        "active": true,
-        "name": "Salón Los Balcones",
-        "slug": "salon-los-balcones",
-        "type": "Salón",
-        "capacity": "Hasta 180 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "Salón con balcones y vista a los jardines, elegante para eventos sociales y corporativos.",
-        "longDescription": "Los Balcones combina la comodidad de un salón cerrado con la vista privilegiada hacia los jardines de la hacienda. Es una opción sofisticada para eventos sociales y empresariales que buscan distinción.",
-        "features": [
-          { "item": "Balcones con vista al jardín" },
-          { "item": "Espacio climatizado" },
-          { "item": "Ambiente sofisticado" },
-          { "item": "Ideal para presídium o templete" }
-        ],
-        "idealFor": [
-          { "item": "Eventos empresariales" },
-          { "item": "Bodas" },
-          { "item": "Conferencias" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20el%20Sal%C3%B3n%20Los%20Balcones"
-      },
-      {
-        "active": true,
-        "name": "La Capilla",
-        "slug": "la-capilla",
-        "type": "Capilla",
-        "capacity": "Hasta 150 invitados",
-        "image": "",
-        "carousel": [ { "image": "" }, { "image": "" }, { "image": "" } ],
-        "shortDescription": "Capilla dentro de la hacienda para celebrar tu ceremonia religiosa sin traslados.",
-        "longDescription": "La Capilla permite vivir la ceremonia religiosa dentro de la misma propiedad, sin necesidad de trasladar a tus invitados. Un recinto con recogimiento y elegancia, a pasos de los jardines y salones donde continuará la fiesta.",
-        "features": [
-          { "item": "Ceremonia dentro de la hacienda" },
-          { "item": "Sin traslados para tus invitados" },
-          { "item": "Ambiente solemne y elegante" },
-          { "item": "A pasos de jardines y salones" }
-        ],
-        "idealFor": [
-          { "item": "Bodas religiosas" },
-          { "item": "Bautizos" },
-          { "item": "Primeras comuniones" }
-        ],
-        "video": "",
-        "plan": "",
-        "whatsapp": "https://wa.me/525553572833?text=Hola%2C%20me%20interesa%20La%20Capilla"
-      }
-    ]
-  },
+    {
+      "label": "Espacios",
+      "target": "spaces"
+    },
+    {
+      "label": "Eventos",
+      "target": "events"
+    },
+    {
+      "label": "Galería",
+      "target": "gallery"
+    },
+    {
+      "label": "Visita Virtual",
+      "target": "tour"
+    },
+    {
+      "label": "Contacto",
+      "target": "contact"
+    }
+  ],
   "events": {
     "hero": {
       "image": "",
@@ -321,49 +623,119 @@
         "title": "Eventos sociales",
         "image": "",
         "description": "Reuniones, aniversarios y celebraciones familiares en un entorno cálido y privado.",
-        "benefits": [ { "item": "Espacios privados" }, { "item": "Montaje a tu medida" }, { "item": "Estacionamiento incluido" } ],
+        "benefits": [
+          {
+            "item": "Espacios privados"
+          },
+          {
+            "item": "Montaje a tu medida"
+          },
+          {
+            "item": "Estacionamiento incluido"
+          }
+        ],
         "ctaLabel": "Cotizar evento social"
       },
       {
         "title": "Bodas",
         "image": "",
         "description": "Ceremonia en capilla, recepción en jardín o salón y fotografía inolvidable, todo en una sede.",
-        "benefits": [ { "item": "Capilla en la propiedad" }, { "item": "Jardines para ceremonia" }, { "item": "Atención personalizada" } ],
+        "benefits": [
+          {
+            "item": "Capilla en la propiedad"
+          },
+          {
+            "item": "Jardines para ceremonia"
+          },
+          {
+            "item": "Atención personalizada"
+          }
+        ],
         "ctaLabel": "Cotizar mi boda"
       },
       {
         "title": "XV años",
         "image": "",
         "description": "Un escenario de ensueño para la celebración más esperada, con espacio para baile y sorpresas.",
-        "benefits": [ { "item": "Pista de baile" }, { "item": "Espacios para vals" }, { "item": "Áreas para fotografía" } ],
+        "benefits": [
+          {
+            "item": "Pista de baile"
+          },
+          {
+            "item": "Espacios para vals"
+          },
+          {
+            "item": "Áreas para fotografía"
+          }
+        ],
         "ctaLabel": "Cotizar XV años"
       },
       {
         "title": "Bautizos",
         "image": "",
         "description": "Celebra la fe y la familia en un espacio íntimo y acogedor dentro de la hacienda.",
-        "benefits": [ { "item": "Capilla disponible" }, { "item": "Salón íntimo" }, { "item": "Ambiente familiar" } ],
+        "benefits": [
+          {
+            "item": "Capilla disponible"
+          },
+          {
+            "item": "Salón íntimo"
+          },
+          {
+            "item": "Ambiente familiar"
+          }
+        ],
         "ctaLabel": "Cotizar bautizo"
       },
       {
         "title": "Graduaciones",
         "image": "",
         "description": "Cierra un ciclo por todo lo alto con espacios amplios para generaciones completas.",
-        "benefits": [ { "item": "Gran capacidad" }, { "item": "Templete y presídium" }, { "item": "Áreas al aire libre" } ],
+        "benefits": [
+          {
+            "item": "Gran capacidad"
+          },
+          {
+            "item": "Templete y presídium"
+          },
+          {
+            "item": "Áreas al aire libre"
+          }
+        ],
         "ctaLabel": "Cotizar graduación"
       },
       {
         "title": "Empresariales",
         "image": "",
         "description": "Convenciones, posadas y reuniones de trabajo con la infraestructura que tu empresa necesita.",
-        "benefits": [ { "item": "Salones climatizados" }, { "item": "Montaje corporativo" }, { "item": "Privacidad total" } ],
+        "benefits": [
+          {
+            "item": "Salones climatizados"
+          },
+          {
+            "item": "Montaje corporativo"
+          },
+          {
+            "item": "Privacidad total"
+          }
+        ],
         "ctaLabel": "Cotizar evento empresarial"
       },
       {
         "title": "Conferencias",
         "image": "",
         "description": "Espacios versátiles para ponencias, capacitaciones y eventos con audiencia.",
-        "benefits": [ { "item": "Montaje auditorio" }, { "item": "Áreas de registro" }, { "item": "Coffee break y catering" } ],
+        "benefits": [
+          {
+            "item": "Montaje auditorio"
+          },
+          {
+            "item": "Áreas de registro"
+          },
+          {
+            "item": "Coffee break y catering"
+          }
+        ],
         "ctaLabel": "Cotizar conferencia"
       }
     ],
@@ -371,113 +743,198 @@
       "title": "Dos formas de celebrar",
       "text": "Adáptate a tu presupuesto y a tu estilo: contrata únicamente el espacio o déjalo todo en nuestras manos.",
       "options": [
-        { "title": "Renta de espacio", "text": "Reserva el jardín, salón o capilla y trae a tus proveedores de confianza. Tú diriges cada detalle de la celebración." },
-        { "title": "Servicio completo", "text": "Nosotros coordinamos banquete, montaje, mobiliario y servicio. Tú solo disfrutas el día sin preocuparte de nada." }
+        {
+          "title": "Renta de espacio",
+          "text": "Reserva el jardín, salón o capilla y trae a tus proveedores de confianza. Tú diriges cada detalle de la celebración."
+        },
+        {
+          "title": "Servicio completo",
+          "text": "Nosotros coordinamos banquete, montaje, mobiliario y servicio. Tú solo disfrutas el día sin preocuparte de nada."
+        }
       ]
     },
     "process": {
       "title": "Así celebramos contigo",
       "steps": [
-        { "title": "Agenda tu visita", "text": "Recorre la hacienda y conoce cada espacio en persona, sin compromiso." },
-        { "title": "Elige tu espacio", "text": "Selecciona el jardín, salón o capilla que mejor se adapte a tu evento." },
-        { "title": "Define el montaje", "text": "Diseñamos juntos el montaje, el menú y los detalles de tu celebración." },
-        { "title": "Celebra tu evento", "text": "El gran día, disfruta mientras nuestro equipo se ocupa de todo." }
+        {
+          "title": "Agenda tu visita",
+          "text": "Recorre la hacienda y conoce cada espacio en persona, sin compromiso."
+        },
+        {
+          "title": "Elige tu espacio",
+          "text": "Selecciona el jardín, salón o capilla que mejor se adapte a tu evento."
+        },
+        {
+          "title": "Define el montaje",
+          "text": "Diseñamos juntos el montaje, el menú y los detalles de tu celebración."
+        },
+        {
+          "title": "Celebra tu evento",
+          "text": "El gran día, disfruta mientras nuestro equipo se ocupa de todo."
+        }
       ]
     }
   },
-  "gallery": {
-    "hero": {
-      "image": "",
-      "title": "Galería",
-      "subtitle": "Momentos celebrados en Hacienda San Andrés"
-    },
-    "intro": {
-      "eyebrow": "Inspírate",
-      "title": "Una mirada a nuestras celebraciones",
-      "text": "Explora jardines, salones y eventos reales. Filtra por categoría para encontrar la inspiración que buscas."
-    },
-    "items": [
-      { "active": true, "title": "Jardín al atardecer", "description": "Recepción al aire libre en La Cúpula.", "category": "Jardines", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Arcos de cantera", "description": "Detalle del Salón Los Arcos.", "category": "Salones", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Ceremonia de boda", "description": "Enlace en los jardines de la hacienda.", "category": "Bodas", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Vals de XV años", "description": "Celebración entre luces y naturaleza.", "category": "XV años", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Montaje corporativo", "description": "Evento empresarial en Los Balcones.", "category": "Empresariales", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Interior de la capilla", "description": "Ceremonia religiosa en La Capilla.", "category": "Capilla", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Mesa principal", "description": "Montaje de banquete para boda.", "category": "Montajes", "type": "image", "image": "", "video": "" },
-      { "active": true, "title": "Jardín Los Campos", "description": "Gran recepción al aire libre.", "category": "Jardines", "type": "image", "image": "", "video": "" }
-    ]
-  },
-  "virtualTour": {
-    "hero": {
-      "image": "",
-      "title": "Visita Virtual",
-      "subtitle": "Recorre la hacienda desde donde estés"
-    },
-    "intro": {
-      "title": "Conoce cada espacio antes de venir",
-      "text": "Te invitamos a recorrer los jardines, salones y la capilla a través de nuestros videos. Y cuando estés listo, agenda tu visita presencial para vivirlo en persona."
-    },
-    "mainVideo": "",
-    "tours": [
-      { "title": "Recorrido por los jardines", "image": "", "video": "" },
-      { "title": "Recorrido por los salones", "image": "", "video": "" },
-      { "title": "Recorrido por la capilla", "image": "", "video": "" }
-    ],
-    "cta": {
-      "title": "¿Listo para verlo en persona?",
-      "whatsappLabel": "Agendar por WhatsApp",
-      "visitLabel": "Agendar visita"
-    }
-  },
-  "contact": {
-    "hero": {
-      "image": "",
-      "title": "Contacto",
-      "subtitle": "Estamos listos para ayudarte a planear tu evento"
-    },
-    "info": {
-      "address": "Atlacomulco No. 1, Col. San Esteban, Naucalpan, Estado de México.",
-      "phone": "55 53 57 28 33",
-      "email": "eventos@haciendasanandres.com.mx",
-      "hours": "Lunes a domingo, 9:00 a 19:00 hrs (previa cita)."
-    },
-    "mapEmbed": "https://www.google.com/maps?q=Atlacomulco%201%2C%20San%20Esteban%2C%20Naucalpan&output=embed",
-    "formTitle": "Cuéntanos sobre tu evento",
-    "formText": "Completa el formulario y un asesor te contactará para resolver tus dudas y agendar tu visita.",
-    "eventTypes": [
-      { "item": "Boda" },
-      { "item": "XV años" },
-      { "item": "Bautizo" },
-      { "item": "Graduación" },
-      { "item": "Evento empresarial" },
-      { "item": "Conferencia" },
-      { "item": "Otro" }
-    ],
-    "whatsappLabel": "Escríbenos por WhatsApp",
-    "visitBlock": {
-      "title": "Agenda tu visita",
-      "text": "La mejor forma de elegir tu espacio es conocerlo. Agenda un recorrido guiado por la hacienda, sin compromiso."
-    }
-  },
   "footer": {
-    "logo": "images/logo.png",
-    "tagline": "Hacienda histórica, jardines y capilla en un solo lugar. Bodas, XV años y eventos sociales y empresariales en Naucalpan.",
-    "address": "Atlacomulco No. 1, Col. San Esteban, Naucalpan, Estado de México.",
-    "phone": "55 53 57 28 33",
-    "email": "eventos@haciendasanandres.com.mx",
-    "hours": "Lun a Dom, 9:00 a 19:00 hrs (previa cita).",
     "socials": [
-      { "label": "Facebook", "link": "#" },
-      { "label": "Instagram", "link": "#" }
+      {
+        "label": "Facebook",
+        "link": "#"
+      },
+      {
+        "label": "Instagram",
+        "link": "#"
+      }
     ],
-    "quickLinks": [
-      { "label": "Inicio", "target": "home" },
-      { "label": "Espacios", "target": "spaces" },
-      { "label": "Eventos", "target": "events" },
-      { "label": "Galería", "target": "gallery" },
-      { "label": "Contacto", "target": "contact" }
-    ],
+    "copyright": "Hacienda San Andrés. Todos los derechos reservados.",
     "privacy": "Aviso de privacidad",
-    "copyright": "Hacienda San Andrés. Todos los derechos reservados."
+    "logo": "images/logo.png",
+    "quickLinks": [
+      {
+        "label": "Inicio",
+        "target": "home"
+      },
+      {
+        "label": "Espacios",
+        "target": "spaces"
+      },
+      {
+        "label": "Eventos",
+        "target": "events"
+      },
+      {
+        "label": "Galería",
+        "target": "gallery"
+      },
+      {
+        "label": "Contacto",
+        "target": "contact"
+      }
+    ],
+    "phone": "55 53 57 28 33",
+    "tagline": "Hacienda histórica, jardines y capilla en un solo lugar. Bodas, XV años y eventos sociales y empresariales en Naucalpan.",
+    "hours": "Lun a Dom, 9:00 a 19:00 hrs (previa cita).",
+    "address": "Atlacomulco No. 1, Col. San Esteban, Naucalpan, Estado de México.",
+    "email": "eventos@haciendasanandres.com.mx"
+  },
+  "home": {
+    "hero": {
+      "slides": [
+        {
+          "image": "",
+          "title": "El día más importante de tu vida, en un solo lugar",
+          "subtitle": "Hacienda histórica, jardines y capilla en Naucalpan desde 1894"
+        },
+        {
+          "image": "",
+          "title": "Bodas que se recuerdan toda la vida",
+          "subtitle": "Jardines abiertos, salones elegantes y atención personalizada"
+        },
+        {
+          "image": "",
+          "title": "Celebra tus XV años entre arcos y jardines",
+          "subtitle": "Espacios privados con la calidez de una hacienda tradicional"
+        }
+      ],
+      "primaryCtaLabel": "Agenda una visita",
+      "primaryCtaTarget": "contact",
+      "secondaryCtaLabel": "Conoce los espacios",
+      "secondaryCtaTarget": "spaces"
+    },
+    "emotional": {
+      "phrase": "El día más importante de tu vida, en un solo lugar."
+    },
+    "intro": {
+      "eyebrow": "Una sola sede",
+      "title": "Hacienda, jardines y capilla en un solo lugar",
+      "text": "Hacienda San Andrés reúne todo lo que tu evento necesita dentro de la misma propiedad: jardines amplios, salones para cualquier clima, una capilla para tu ceremonia y áreas privadas para tus invitados. Sin traslados, sin prisas, sin compartir el espacio con otro evento.",
+      "image": "",
+      "ctaLabel": "Descubre la hacienda",
+      "ctaTarget": "history"
+    },
+    "highlights": [
+      {
+        "title": "Salones",
+        "text": "Espacios climatizados y versátiles, listos para cualquier estación del año y todo tipo de montaje.",
+        "target": "spaces"
+      },
+      {
+        "title": "Jardines",
+        "text": "Áreas verdes abiertas, rodeadas de naturaleza, ideales para ceremonias y recepciones al aire libre.",
+        "target": "spaces"
+      },
+      {
+        "title": "Capilla",
+        "text": "Un recinto propio dentro de la hacienda para celebrar tu ceremonia religiosa con intimidad.",
+        "target": "spaces"
+      }
+    ],
+    "eventsSection": {
+      "eyebrow": "Cada celebración tiene su lugar",
+      "title": "Eventos que celebramos",
+      "text": "Desde la boda soñada hasta la reunión empresarial más exigente, adaptamos la hacienda a tu historia.",
+      "cards": [
+        {
+          "title": "Bodas",
+          "image": ""
+        },
+        {
+          "title": "XV años",
+          "image": ""
+        },
+        {
+          "title": "Graduaciones",
+          "image": ""
+        },
+        {
+          "title": "Bautizos",
+          "image": ""
+        },
+        {
+          "title": "Empresariales",
+          "image": ""
+        },
+        {
+          "title": "Cumpleaños",
+          "image": ""
+        }
+      ]
+    },
+    "experience": {
+      "eyebrow": "La experiencia Hacienda San Andrés",
+      "title": "Una tradición que se siente desde que entras",
+      "items": [
+        {
+          "title": "Historia desde 1894",
+          "text": "Más de un siglo recibiendo celebraciones entre muros, arcos y jardines con carácter propio."
+        },
+        {
+          "title": "Ubicación privilegiada",
+          "text": "En el corazón de Naucalpan, con acceso sencillo y estacionamiento dentro de la propiedad."
+        },
+        {
+          "title": "Naturaleza viva",
+          "text": "Jardines arbolados y áreas verdes que enmarcan cada fotografía de tu evento."
+        },
+        {
+          "title": "Espacios privados",
+          "text": "Tu evento es el único del día: disfrutas la hacienda completa sin interrupciones."
+        },
+        {
+          "title": "Atención personalizada",
+          "text": "Un equipo que acompaña cada decisión, desde la primera visita hasta el último brindis."
+        }
+      ]
+    },
+    "spacesCarousel": {
+      "eyebrow": "Recorre la hacienda",
+      "title": "Nuestros espacios"
+    },
+    "finalCta": {
+      "title": "Agenda una visita a la hacienda",
+      "text": "Conoce los jardines, los salones y la capilla en persona. Te recibimos con una visita guiada sin compromiso.",
+      "whatsappLabel": "Escríbenos por WhatsApp",
+      "contactLabel": "Ir a contacto"
+    }
   }
 }
