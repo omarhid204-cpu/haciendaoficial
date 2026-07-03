@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hacienda San Andrés</title>
+<meta name="description" content="Hacienda histórica desde 1894 con jardines, salones y capilla en un solo lugar. Bodas, XV años y eventos en Naucalpan, Estado de México.">
+<meta name="theme-color" content="#14233B">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hacienda San Andrés">
+<meta property="og:description" content="Bodas, XV años y eventos en una hacienda histórica de Naucalpan.">
+<link rel="icon" id="favicon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>
+:root{
+  --ink:#14233B; --ink-2:#22354F; --slate:#5E6E7E; --text:#39434F;
+  --gold:#B68D4C; --gold-2:#C9A86A;
+  --ivory:#FBF8F2; --cream:#F3EDE1; --line:#E7DFCF; --line-2:#ECE5D8;
+  --mist:#8A93A0; --white:#fff;
+  --maxw:1180px; --r:14px;
+  --shadow:0 22px 60px -34px rgba(20,35,59,.45);
+  --shadow-sm:0 10px 30px -20px rgba(20,35,59,.4);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+  --label:'Montserrat','Inter',sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:clamp(20px,5vw,40px);width:100%}
+.center{text-align:center}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+
+/* Typography */
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:500;color:var(--ink);line-height:1.08;letter-spacing:.005em}
+.eyebrow{margin:0 0 14px;font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.eyebrow--light{color:var(--gold-2)}
+.h2{font-size:clamp(2rem,4.2vw,3.05rem);font-weight:500}
+.h2--light{color:#fff}
+.lead{font-size:1.06rem;color:var(--slate);margin:18px 0 0;max-width:60ch}
+.lead--center{margin-inline:auto}
+.lead--light{color:rgba(255,255,255,.82)}
+
+/* Sections */
+.section{padding-block:clamp(60px,9vw,118px)}
+.section--alt{background:linear-gradient(180deg,var(--ivory),var(--cream))}
+.section--ink{background:var(--ink);color:rgba(255,255,255,.82)}
+.section__head{max-width:62ch;margin-bottom:46px}
+.section__head.center{margin-inline:auto}
+
+/* Frames / media + placeholder */
+.frame{position:relative;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--cream);isolation:isolate}
+.frame--card{aspect-ratio:4/3}
+.frame--arch{aspect-ratio:4/5;border-radius:50% 50% var(--r) var(--r)/30% 30% var(--r) var(--r)}
+.frame--portrait{aspect-ratio:3/4}
+.frame--wide{aspect-ratio:16/9}
+.frame--full{position:absolute;inset:0;aspect-ratio:auto;height:100%;border-radius:0}
+.frame__img,.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph{display:grid;place-items:center;background:linear-gradient(140deg,#f0e8d8,#fbf8f2 60%);color:var(--gold)}
+.ph__arch{position:absolute;width:38%;max-width:120px;aspect-ratio:1/1.18;border:1px solid var(--gold);border-radius:60% 60% 8% 8%/52% 52% 8% 8%;opacity:.55}
+.ph__mark{position:relative;font-family:var(--serif);font-size:1.7rem;letter-spacing:.18em;color:var(--ink);opacity:.55}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;font-family:var(--label);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:14px 26px;border-radius:60px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:.28s var(--ease);white-space:nowrap}
+.btn--sm{padding:11px 18px;font-size:.68rem}
+.btn--solid{background:var(--ink);color:#fff}
+.btn--solid:hover{background:var(--ink-2);transform:translateY(-2px)}
+.btn--ghost{background:transparent;border-color:var(--ink);color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.btn--light{background:#fff;color:var(--ink)}
+.btn--light:hover{background:var(--cream);transform:translateY(-2px)}
+.btn--outline-light{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+.btn--outline-light:hover{background:#fff;color:var(--ink)}
+.btn--gold{background:var(--gold);color:#fff;border-color:var(--gold)}
+.btn--gold:hover{background:#a67d3e;transform:translateY(-2px)}
+.btn--wa{background:#1FB259;color:#fff}
+.btn--wa:hover{background:#179949;transform:translateY(-2px)}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn-row.center{justify-content:center}
+
+/* Header */
+.header{position:sticky;top:0;z-index:60;background:rgba(251,248,242,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:.3s}
+.header__bar{display:flex;align-items:center;gap:22px;min-height:100px;padding-block:10px}
+.header__logo{display:inline-flex;align-items:center}
+.header__logo img{height:var(--logo-h,88px);width:auto;border-radius:6px}
+.header__logo .ph{position:static;width:auto;height:46px;padding:0 14px;border-radius:8px;background:none}
+.header__logo .ph__arch{display:none}
+.header__logo .ph__mark{font-size:1.3rem}
+.nav{display:flex;align-items:center;gap:24px;margin-left:auto}
+.nav a{position:relative;font-size:.88rem;font-weight:500;color:var(--ink);text-decoration:none;padding:6px 0;letter-spacing:.01em}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:.3s var(--ease)}
+.nav a:hover::after,.nav a.active::after{width:100%}
+.nav a.active{color:var(--gold)}
+.header__promo{display:inline-flex;align-items:center;gap:8px;font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);background:transparent;border:1px solid var(--gold);border-radius:60px;padding:10px 18px;cursor:pointer;transition:.28s}
+.header__promo:hover{background:var(--gold);color:#fff}
+.header__promo .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.header__promo:hover .dot{background:#fff}
+.burger{display:none;flex-direction:column;gap:5px;width:48px;height:48px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.5);align-items:center;justify-content:center;cursor:pointer;margin-left:auto}
+.burger span{width:24px;height:2px;border-radius:2px;background:var(--ink);transition:.3s}
+
+/* Mobile menu */
+.mmenu{position:fixed;inset:0;z-index:90;background:var(--ink);color:#fff;display:flex;flex-direction:column;padding:26px clamp(20px,7vw,48px) 40px;transform:translateY(-102%);transition:transform .45s var(--ease);visibility:hidden}
+.mmenu.open{transform:none;visibility:visible}
+.mmenu__top{display:flex;justify-content:space-between;align-items:center}
+.mmenu__top img{height:42px}
+.mmenu__close{background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;width:46px;height:46px;border-radius:50%;font-size:1.4rem;cursor:pointer;line-height:1}
+.mmenu__links{display:flex;flex-direction:column;gap:6px;margin-top:auto;margin-bottom:auto}
+.mmenu__links a{font-family:var(--serif);font-size:clamp(1.7rem,7vw,2.4rem);color:#fff;text-decoration:none;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.08);transition:.25s;display:flex;align-items:baseline;gap:14px}
+.mmenu__links a:hover,.mmenu__links a.active{color:var(--gold-2)}
+.mmenu__links a span{font-family:var(--label);font-size:.7rem;letter-spacing:.2em;color:rgba(255,255,255,.4)}
+.mmenu__foot{display:flex;gap:20px;flex-wrap:wrap;font-size:.85rem;color:rgba(255,255,255,.6)}
+
+/* Hero / carousel */
+.hero{position:relative;min-height:clamp(580px,90vh,840px);display:flex}
+.carousel{position:relative;width:100%}
+.carousel--hero{min-height:inherit}
+.carousel--hero .carousel__track{position:absolute;inset:0}
+.carousel__slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s var(--ease);pointer-events:none}
+.carousel__slide.active{opacity:1;pointer-events:auto}
+.hero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,35,59,.34),rgba(20,35,59,.66)),linear-gradient(90deg,rgba(20,35,59,.5),transparent 70%);z-index:1}
+.hero__content{position:relative;z-index:2;align-self:center;color:#fff;max-width:740px;padding-block:120px}
+.hero__title{font-size:clamp(2.5rem,6vw,4.6rem);color:#fff;font-weight:500;max-width:14ch}
+.hero__sub{font-size:clamp(1.05rem,2.2vw,1.35rem);color:rgba(255,255,255,.86);margin:20px 0 0;font-weight:400;max-width:46ch}
+.carousel--hero .hero__content{display:flex;flex-direction:column}
+.carousel__nav{position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(20,35,59,.25);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;backdrop-filter:blur(4px);transition:.25s;display:grid;place-items:center}
+.carousel__nav:hover{background:#fff;color:var(--ink)}
+.carousel__nav--prev{left:18px}
+.carousel__nav--next{right:18px}
+.carousel__dots{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:4;display:flex;gap:9px}
+.carousel__dots button{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.45);cursor:pointer;transition:.25s;padding:0}
+.carousel__dots button.active{background:var(--gold-2);width:26px;border-radius:6px}
+
+/* page hero */
+.pagehero{position:relative;min-height:clamp(360px,52vh,520px);display:flex;align-items:flex-end}
+.pagehero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,35,59,.28),rgba(20,35,59,.72));z-index:1}
+.pagehero__inner{position:relative;z-index:2;color:#fff;padding-block:clamp(38px,7vw,72px)}
+.pagehero__title{font-size:clamp(2.4rem,6vw,4rem);color:#fff;font-weight:500}
+.pagehero__sub{color:rgba(255,255,255,.84);font-size:1.1rem;margin:14px 0 0;max-width:48ch}
+
+/* Emotional band */
+.band--emotional{background:var(--ink);padding-block:clamp(54px,8vw,92px)}
+.emotional{font-family:var(--serif);font-style:italic;font-size:clamp(1.7rem,4vw,2.9rem);color:#fff;text-align:center;line-height:1.25;max-width:22ch;margin:0 auto;font-weight:400}
+.emotional::before,.emotional::after{content:"";display:block;width:46px;height:1px;background:var(--gold);margin:24px auto}
+
+/* Split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,72px);align-items:center}
+.split--reverse .split__media{order:2}
+.split__body .eyebrow{margin-top:0}
+
+/* Grids */
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+
+/* Highlight cards */
+.hcard{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:38px 30px;background:#fff;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--text);transition:.3s var(--ease)}
+.hcard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+.hcard__icon{color:var(--gold)}
+.hcard__title{font-size:1.55rem}
+.hcard__more{margin-top:auto;font-family:var(--label);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+
+/* Event mini cards (home) */
+.grid--events{gap:18px}
+.ecard{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none}
+.ecard .frame{aspect-ratio:3/4;border-radius:var(--r)}
+.ecard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(20,35,59,.8));z-index:1}
+.ecard__label{position:absolute;left:0;right:0;bottom:18px;z-index:2;text-align:center;color:#fff;font-family:var(--serif);font-size:1.5rem}
+.ecard:hover .frame{transform:scale(1.04)}
+.ecard .frame{transition:.5s var(--ease)}
+
+/* Feature list (experience) */
+.featurelist{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:2px}
+.featurelist li{display:grid;grid-template-columns:auto 1fr;gap:6px;padding:18px 0;border-top:1px solid rgba(255,255,255,.12)}
+.featurelist li:last-child{border-bottom:1px solid rgba(255,255,255,.12)}
+.featurelist strong{grid-column:1/-1;color:#fff;font-family:var(--serif);font-size:1.35rem;font-weight:500}
+.featurelist span{color:rgba(255,255,255,.7)}
+
+/* Strip carousel */
+.strip-wrap{position:relative}
+.strip{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 22px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip__card{flex:0 0 clamp(260px,32vw,360px);scroll-snap-align:start;text-decoration:none;color:var(--text)}
+.strip__card .frame{margin-bottom:14px}
+.strip__name{font-family:var(--serif);font-size:1.45rem;color:var(--ink)}
+.strip__meta{font-family:var(--label);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+.strip__nav{display:flex;gap:10px;justify-content:flex-end;margin-bottom:18px}
+.strip__nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:1.3rem;cursor:pointer;transition:.25s}
+.strip__nav button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* CTA final */
+.cta-final{position:relative;background:var(--ink);color:#fff;padding-block:clamp(64px,10vw,120px);text-align:center}
+.cta-final::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(182,141,76,.18),transparent 60%)}
+.cta-final .wrap{position:relative}
+
+/* Timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative;max-width:760px}
+.timeline::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:1px;background:var(--line)}
+.timeline__item{position:relative;padding:0 0 38px 50px}
+.timeline__item::before{content:"";position:absolute;left:5px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--ivory)}
+.timeline__year{font-family:var(--label);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.timeline__body h3{font-size:1.5rem;margin:4px 0 6px}
+
+/* Value cards */
+.vcard{padding:30px 26px;background:#fff;border:1px solid var(--line);border-radius:var(--r);text-align:center}
+.vcard h3{font-size:1.4rem;margin-bottom:8px;color:var(--ink)}
+.vcard .num{font-family:var(--serif);font-size:1.1rem;color:var(--gold);display:block;margin-bottom:10px}
+
+/* Filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:38px}
+.filters button{font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border-radius:60px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:.25s}
+.filters button:hover{border-color:var(--gold)}
+.filters button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* Space cards */
+.grid--spaces{grid-template-columns:repeat(3,1fr);gap:30px}
+.scard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.3s var(--ease)}
+.scard:hover{box-shadow:var(--shadow);transform:translateY(-5px)}
+.scard__media{position:relative;display:block}
+.scard__media .frame{border-radius:0;aspect-ratio:4/3}
+.scard__type{position:absolute;top:14px;left:14px;z-index:2;background:rgba(251,248,242,.92);color:var(--ink);font-family:var(--label);font-size:.64rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:40px}
+.scard__body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.scard__title{font-size:1.55rem}
+.scard__cap{font-family:var(--label);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:6px 0 12px}
+.scard__desc{color:var(--slate);font-size:.96rem;flex:1}
+.scard__actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;padding:0;list-style:none}
+.chips li{font-family:var(--label);font-size:.72rem;letter-spacing:.06em;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:40px;padding:8px 16px}
+
+/* Detail */
+.detailhero{position:relative;min-height:clamp(360px,56vh,560px);display:flex;align-items:flex-end}
+.detailhero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,35,59,.25),rgba(20,35,59,.8));z-index:1}
+.detailhero__inner{position:relative;z-index:2;color:#fff;padding-block:clamp(36px,6vw,64px)}
+.detail-back{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.85);text-decoration:none;font-family:var(--label);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.detail-back:hover{color:#fff}
+.detailhero__title{font-size:clamp(2.3rem,6vw,3.8rem);color:#fff;font-weight:500}
+.detailhero__meta{display:flex;gap:22px;flex-wrap:wrap;margin-top:14px;color:rgba(255,255,255,.85);font-family:var(--label);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase}
+.detail-cols{display:grid;grid-template-columns:1.6fr 1fr;gap:clamp(34px,6vw,70px);align-items:start}
+.factbox{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.factbox h3{font-size:1.05rem;font-family:var(--label);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:16px}
+.factrow{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+.factrow span:first-child{color:var(--slate)}
+.factrow span:last-child{color:var(--ink);text-align:right}
+
+/* Carousel media (detail gallery) */
+.carousel--media{border-radius:var(--r);overflow:hidden;background:var(--cream)}
+.carousel--media .carousel__track{position:relative;aspect-ratio:16/10}
+.carousel--media .carousel__slide{inset:0}
+.carousel--media .frame{position:absolute;inset:0;height:100%;border-radius:0;aspect-ratio:auto}
+
+/* Video */
+.video{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#000}
+.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* Events types */
+.grid--types{grid-template-columns:repeat(2,1fr);gap:30px}
+.tcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.tcard .frame{border-radius:0;aspect-ratio:16/10}
+.tcard__body{padding:28px 28px 30px;display:flex;flex-direction:column;flex:1}
+.tcard__title{font-size:1.7rem;margin-bottom:8px}
+.tcard__benefits{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.tcard__benefits li{display:flex;gap:10px;align-items:flex-start;color:var(--slate);font-size:.94rem}
+.tcard__benefits li::before{content:"";flex:0 0 6px;height:6px;margin-top:9px;border-radius:50%;background:var(--gold)}
+.tcard .btn{margin-top:22px;align-self:flex-start}
+
+/* Two ways */
+.ways{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.way{padding:40px 34px;border-radius:var(--r);border:1px solid var(--line);background:#fff;position:relative}
+.way::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-2))}
+.way h3{font-size:1.8rem;margin-bottom:12px}
+
+/* Process steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+.step{position:relative;padding-top:18px}
+.step__n{font-family:var(--serif);font-size:2.6rem;color:var(--gold);line-height:1}
+.step h3{font-size:1.35rem;margin:10px 0 6px}
+
+/* Masonry gallery */
+.masonry{columns:3;column-gap:20px}
+.masonry__item{break-inside:avoid;margin-bottom:20px;position:relative;border-radius:var(--r);overflow:hidden;cursor:pointer;border:1px solid var(--line)}
+.masonry__item .frame{border-radius:0}
+.masonry__item:nth-child(3n+1) .frame{aspect-ratio:3/4}
+.masonry__item:nth-child(3n+2) .frame{aspect-ratio:4/3}
+.masonry__item:nth-child(3n+3) .frame{aspect-ratio:1/1}
+.masonry__cap{position:absolute;inset:auto 0 0 0;padding:30px 18px 16px;background:linear-gradient(transparent,rgba(20,35,59,.82));color:#fff;opacity:0;transition:.3s;z-index:2}
+.masonry__item:hover .masonry__cap{opacity:1}
+.masonry__cap strong{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:500}
+.masonry__cap span{font-size:.85rem;color:rgba(255,255,255,.8)}
+.masonry__tag{position:absolute;top:12px;left:12px;z-index:2;background:rgba(251,248,242,.9);color:var(--ink);font-family:var(--label);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:30px}
+.play-badge{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:56px;height:56px;border-radius:50%;background:rgba(20,35,59,.55);border:1px solid rgba(255,255,255,.6);display:grid;place-items:center;color:#fff}
+
+/* Tour cards */
+.grid--tours{grid-template-columns:repeat(3,1fr)}
+.tour{position:relative;border-radius:var(--r);overflow:hidden;cursor:pointer;text-decoration:none}
+.tour::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(20,35,59,.78));z-index:1}
+.tour .frame{aspect-ratio:4/5;border-radius:0}
+.tour__t{position:absolute;left:20px;right:20px;bottom:20px;z-index:2;color:#fff;font-family:var(--serif);font-size:1.4rem}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,60px);align-items:start}
+.infocards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px}
+.infocard{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.infocard .ic{color:var(--gold);margin-bottom:12px}
+.infocard h4{font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
+.infocard p{margin:0;color:var(--ink);font-size:.96rem}
+.infocard a{color:var(--ink);text-decoration:none}
+.mapframe{aspect-ratio:16/10;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);margin-top:8px}
+.mapframe iframe{width:100%;height:100%;border:0}
+.form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(26px,4vw,40px)}
+.field{margin-bottom:18px}
+.field label{display:block;font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--slate);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;background:var(--ivory);font-family:var(--sans);font-size:.96rem;color:var(--ink);transition:.2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 3px rgba(182,141,76,.12)}
+.field textarea{min-height:120px;resize:vertical}
+.field-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hp{position:absolute;left:-9999px}
+.visitblock{margin-top:26px;background:var(--ink);color:#fff;border-radius:var(--r);padding:34px}
+.visitblock h3{color:#fff;font-size:1.7rem;margin-bottom:10px}
+
+/* Footer */
+.footer{background:var(--ink);color:rgba(255,255,255,.72);padding-block:clamp(54px,7vw,80px) 0}
+.footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.footer__logo img{height:50px;margin-bottom:18px}
+.footer__logo .ph{position:static;width:auto;height:48px;padding:0 14px;background:none}
+.footer__logo .ph__arch{display:none}
+.footer h4{color:#fff;font-family:var(--label);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.footer a{color:rgba(255,255,255,.72);text-decoration:none;transition:.2s}
+.footer a:hover{color:var(--gold-2)}
+.footer__socials{display:flex;gap:12px;margin-top:8px}
+.footer__socials a{border:1px solid rgba(255,255,255,.2);border-radius:50px;padding:8px 16px;font-family:var(--label);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}
+.footer__bottom{margin-top:48px;border-top:1px solid rgba(255,255,255,.12);padding-block:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.5)}
+.footer__bottom a{color:rgba(255,255,255,.5)}
+
+/* WhatsApp float */
+.wa{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;align-items:center;gap:12px}
+.wa__bubble{background:#fff;color:var(--ink);box-shadow:var(--shadow-sm);padding:11px 16px;border-radius:40px 40px 6px 40px;font-size:.86rem;max-width:200px;border:1px solid var(--line)}
+.wa__btn{width:58px;height:58px;border-radius:50%;background:#1FB259;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(31,178,89,.6);transition:.25s}
+.wa__btn:hover{transform:scale(1.06)}
+
+/* Modal */
+.modal{position:fixed;inset:0;z-index:95;background:rgba(12,20,34,.62);display:none;place-items:center;padding:20px;backdrop-filter:blur(3px)}
+.modal.open{display:grid}
+.modal__card{background:var(--ivory);max-width:560px;width:100%;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);position:relative;animation:pop .35s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.modal__card .frame{aspect-ratio:16/9;border-radius:0}
+.modal__body{padding:32px 34px 36px}
+.modal__body h3{font-size:1.9rem;margin-bottom:12px}
+.modal__close{position:absolute;top:14px;right:14px;z-index:3;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.9);border:none;font-size:1.3rem;cursor:pointer;color:var(--ink)}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(8,14,24,.94);display:none;place-items:center;padding:24px}
+.lightbox.open{display:grid}
+.lightbox__stage{max-width:1000px;width:100%;max-height:82vh;display:grid;place-items:center}
+.lightbox__stage img{max-width:100%;max-height:82vh;border-radius:8px}
+.lightbox__stage .video{width:min(900px,90vw)}
+.lightbox__cap{color:#fff;text-align:center;margin-top:16px;font-family:var(--serif);font-size:1.2rem}
+.lightbox__close{position:absolute;top:20px;right:24px;background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;width:46px;height:46px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+.lightbox__nav{position:absolute;top:50%;transform:translateY(-50%);background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;width:50px;height:50px;border-radius:50%;font-size:1.6rem;cursor:pointer}
+.lightbox__nav--prev{left:24px}.lightbox__nav--next{right:24px}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media(max-width:980px){
+  .nav{display:none}
+  .header__promo{display:none}
+  .burger{display:flex}
+  .split,.detail-cols,.contact-grid{grid-template-columns:1fr}
+  .split--reverse .split__media{order:0}
+  .grid-3,.grid--spaces,.grid--types,.grid--tours,.ways,.steps{grid-template-columns:repeat(2,1fr)}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .masonry{columns:2}
+}
+@media(max-width:640px){
+  .header__bar{position:relative;justify-content:center;min-height:76px;gap:12px}
+  .header__logo{margin:0}
+  .header__logo img{height:min(calc(var(--logo-h,88px) * .8), 62px)}
+  .burger{position:absolute;right:0;top:50%;transform:translateY(-50%);width:44px;height:44px;margin-left:0}
+  .mmenu__top img{height:52px;border-radius:6px}
+  .grid-3,.grid--spaces,.grid--types,.grid--tours,.ways,.steps,.grid-4,.infocards,.field-2{grid-template-columns:1fr}
+  .masonry{columns:1}
+  .grid--events{grid-template-columns:repeat(2,1fr)}
+  .footer__grid{grid-template-columns:1fr}
+  .carousel__nav{width:42px;height:42px}
+  .wa__bubble{display:none}
+  .hero{min-height:64vh}
+  .hero__content{padding-block:64px}
+  /* Imágenes uniformes y horizontales en celular */
+  .frame--arch{aspect-ratio:4/3;border-radius:var(--r)}
+  .frame--portrait,.ecard .frame{aspect-ratio:4/3;border-radius:var(--r)}
+  .masonry__item:nth-child(3n+1) .frame,
+  .masonry__item:nth-child(3n+2) .frame,
+  .masonry__item:nth-child(3n+3) .frame{aspect-ratio:4/3}
+}
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .carousel__slide{transition:opacity .2s}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main-content">Saltar al contenido</a>
+
+<header class="header"><div class="wrap header__bar" id="header-bar"></div></header>
+<nav class="mmenu" id="mmenu" aria-label="Menú móvil"></nav>
+
+<main id="main-content" role="main"></main>
+
+<footer class="footer" id="site-footer"></footer>
+
+<a class="wa" id="wa-float" href="#" target="_blank" rel="noopener" hidden></a>
+
+<div class="modal" id="promo-modal" role="dialog" aria-modal="true" aria-label="Promoción del mes"></div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería">
+  <button class="lightbox__close" data-lb-close aria-label="Cerrar">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" data-lb-prev aria-label="Anterior">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" data-lb-next aria-label="Siguiente">›</button>
+  <div class="lightbox__stage" id="lightbox-stage"></div>
+</div>
+
+<!-- Formulario estático para detección de Netlify Forms -->
+<form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="nombre"><input type="email" name="email"><input type="tel" name="telefono">
+  <input type="date" name="fecha-evento"><input type="number" name="invitados">
+  <select name="tipo-evento"><option value="Boda">Boda</option></select>
+  <textarea name="comentarios"></textarea><input name="bot-field">
+</form>
+
+<script>
+// Netlify Identity: redirección de tokens de invitación / recuperación al panel /admin/
+if (
+  window.location.hash.includes("invite_token") ||
+  window.location.hash.includes("recovery_token") ||
+  window.location.hash.includes("confirmation_token") ||
+  window.location.hash.includes("email_change_token") ||
+  window.location.hash.includes("access_token")
+) {
+  window.location.href = "/admin/" + window.location.hash;
+}
+if (window.netlifyIdentity) { window.netlifyIdentity.init(); }
+</script>
+
+<script>
+const App = (() => {
+  let data = null;
+  const main = document.getElementById('main-content');
+
+  /* ---------- icons ---------- */
+  const ICON = {
+    wa: '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.7-6.1c-.3-.1-1.5-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.6.9-.8 1-.1.2-.3.2-.5.1-1.4-.6-2.3-1.1-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.6-.3Z"/></svg>',
+    arch: '<svg viewBox="0 0 40 48" width="36" height="42" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M5 46V20a15 15 0 0 1 30 0v26"/><path d="M2.5 46h35"/></svg>',
+    play: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>',
+    pin: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>',
+    phone: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L17 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2Z"/></svg>',
+    mail: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>',
+    clock: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
+  };
+
+  /* ---------- helpers ---------- */
+  const esc = s => (s == null ? '' : String(s)).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const ph = a => `<span class="ph" role="img" aria-label="${esc(a)}"><span class="ph__arch"></span><span class="ph__mark">HSA</span></span>`;
+  function phFix(img){ const w=document.createElement('div'); w.innerHTML=ph(img.alt); img.replaceWith(w.firstChild); }
+  function frame(src, alt, mod){
+    mod = mod || '';
+    const a = esc(alt || 'Hacienda San Andrés');
+    if (src) return `<div class="frame ${mod}"><img class="frame__img" src="${esc(src)}" alt="${a}" loading="lazy" onerror="App.phFix(this)"></div>`;
+    return `<div class="frame ${mod}">${ph(a)}</div>`;
+  }
+  const isUrl = t => /^(https?:|mailto:|tel:)/.test(t || '');
+  function btn(label, target, kind, extra){
+    if (!label) return '';
+    kind = kind || 'solid'; extra = extra || '';
+    if (isUrl(target)) return `<a class="btn btn--${kind}" href="${esc(target)}" ${target.startsWith('http')?'target="_blank" rel="noopener"':''} ${extra}>${esc(label)}</a>`;
+    return `<a class="btn btn--${kind}" href="#${esc(target||'home')}" ${extra}>${esc(label)}</a>`;
+  }
+  function waLink(custom){
+    if (custom) return custom;
+    const w = data.whatsapp || {};
+    const num = (w.number || '').replace(/\D/g,'');
+    return `https://wa.me/${num}?text=${encodeURIComponent(w.message||'')}`;
+  }
+  function waBtn(label, custom, kind){
+    return `<a class="btn btn--${kind||'wa'}" href="${esc(custom||waLink())}" target="_blank" rel="noopener">${ICON.wa}${esc(label||'WhatsApp')}</a>`;
+  }
+  function eyebrow(t, light){ return t ? `<p class="eyebrow${light?' eyebrow--light':''}">${esc(t)}</p>` : ''; }
+  function videoEmbed(url){
+    if (!url) return '';
+    const u = String(url);
+    const yt = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/|v\/))([\w-]{6,})/);
+    const vm = u.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+    let src = '';
+    if (yt) src = `https://www.youtube.com/embed/${yt[1]}`;
+    else if (vm) src = `https://player.vimeo.com/video/${vm[1]}`;
+    if (src) return `<div class="video"><iframe src="${src}" title="Video" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+    if (/\.(mp4|webm|ogg)(\?|$)/i.test(u)) return `<div class="video"><video src="${esc(u)}" controls playsinline></video></div>`;
+    return `<div class="video"><iframe src="${esc(u)}" title="Video" loading="lazy" allowfullscreen></iframe></div>`;
+  }
+
+  /* ---------- nav resolution ---------- */
+  const ROUTES = {home:'home',inicio:'home','nuestra-historia':'history',historia:'history',history:'history',espacios:'spaces',spaces:'spaces',eventos:'events',events:'events',galeria:'gallery',gallery:'gallery','visita-virtual':'tour',tour:'tour',contacto:'contact',contact:'contact'};
+
+  /* ---------- header / menu / footer / chrome ---------- */
+  function logoImg(src, alt, extra){
+    extra = extra || '';
+    if (src) return `<img src="${esc(src)}" alt="${esc(alt)}" ${extra} onerror="App.phFix(this)">`;
+    return ph(alt);
+  }
+  function renderHeader(){
+    const s = data.site || {}, promo = data.promotion || {};
+    const links = (data.navigation || []).map(n => `<a href="#${esc(n.target)}" data-route="${esc(n.target)}">${esc(n.label)}</a>`).join('');
+    const promoBtn = promo.active ? `<button class="header__promo" id="promo-open"><span class="dot"></span>${esc(promo.buttonLabel||'Promoción del mes')}</button>` : '';
+    const logoStyle = s.logoHeight ? `style="--logo-h:${parseInt(s.logoHeight,10)}px"` : '';
+    document.getElementById('header-bar').innerHTML =
+      `<a class="header__logo" href="#home" aria-label="${esc(s.title||'Inicio')}">${logoImg(s.logo, s.title||'Hacienda San Andrés', logoStyle)}</a>
+       <nav class="nav" aria-label="Principal">${links}</nav>
+       ${promoBtn}
+       <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>`;
+
+    const mlinks = (data.navigation || []).map((n,i)=>`<a href="#${esc(n.target)}" data-route="${esc(n.target)}"><span>0${i+1}</span>${esc(n.label)}</a>`).join('');
+    document.getElementById('mmenu').innerHTML =
+      `<div class="mmenu__top">${logoImg(s.logo,s.title)}<button class="mmenu__close" id="mclose" aria-label="Cerrar menú">×</button></div>
+       <nav class="mmenu__links" aria-label="Móvil">${mlinks}</nav>
+       <div class="mmenu__foot"><span>${esc((data.contact&&data.contact.info&&data.contact.info.phone)||'')}</span><span>${esc((data.contact&&data.contact.info&&data.contact.info.email)||'')}</span></div>`;
+
+    document.getElementById('burger').onclick = openMenu;
+    document.getElementById('mclose').onclick = closeMenu;
+    document.getElementById('mmenu').querySelectorAll('a').forEach(a => a.onclick = closeMenu);
+    if (promo.active) document.getElementById('promo-open').onclick = openPromo;
+  }
+  function openMenu(){ document.getElementById('mmenu').classList.add('open'); document.getElementById('burger').setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closeMenu(){ document.getElementById('mmenu').classList.remove('open'); document.getElementById('burger').setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+
+  function renderFooter(){
+    const f = data.footer || {}, s = data.site || {};
+    const quick = (f.quickLinks||[]).map(l=>`<li><a href="#${esc(l.target)}">${esc(l.label)}</a></li>`).join('');
+    const soc = (f.socials||[]).map(x=>`<a href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join('');
+    document.getElementById('site-footer').innerHTML =
+      `<div class="wrap">
+        <div class="footer__grid">
+          <div>
+            <div class="footer__logo">${logoImg(f.logo||s.logo, s.title)}</div>
+            <p style="max-width:42ch">${esc(f.tagline)}</p>
+            <div class="footer__socials">${soc}</div>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul>
+              <li>${esc(f.address)}</li>
+              <li><a href="tel:${esc((f.phone||'').replace(/\s/g,''))}">${esc(f.phone)}</a></li>
+              <li><a href="mailto:${esc(f.email)}">${esc(f.email)}</a></li>
+              <li>${esc(f.hours)}</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Navegación</h4>
+            <ul>${quick}</ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© ${new Date().getFullYear()} ${esc(f.copyright)}</span>
+          <a href="#contact">${esc(f.privacy)}</a>
+        </div>
+      </div>`;
+  }
+
+  function renderWhatsApp(){
+    const w = data.whatsapp || {};
+    const el = document.getElementById('wa-float');
+    if (!w.active){ el.hidden = true; return; }
+    el.hidden = false;
+    el.href = waLink();
+    el.innerHTML = `${(w.showBubble && w.bubbleText)?`<span class="wa__bubble">${esc(w.bubbleText)}</span>`:''}<span class="wa__btn" aria-label="WhatsApp">${ICON.wa}</span>`;
+  }
+
+  /* ---------- promo modal ---------- */
+  function renderPromo(){
+    const p = data.promotion || {};
+    const m = document.getElementById('promo-modal');
+    if (!p.active){ m.innerHTML=''; return; }
+    m.innerHTML =
+      `<div class="modal__card">
+        <button class="modal__close" id="promo-close" aria-label="Cerrar">×</button>
+        ${frame(p.image, p.title)}
+        <div class="modal__body">
+          ${eyebrow('Promoción')}
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.description)}</p>
+          ${p.ctaLabel?`<div class="btn-row">${btn(p.ctaLabel,p.ctaLink,'gold')}</div>`:''}
+        </div>
+      </div>`;
+    document.getElementById('promo-close').onclick = closePromo;
+    m.onclick = e => { if (e.target === m) closePromo(); };
+  }
+  function openPromo(){ document.getElementById('promo-modal').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closePromo(){ document.getElementById('promo-modal').classList.remove('open'); document.body.style.overflow=''; }
+
+  /* ---------- SEO ---------- */
+  function applySEO(){
+    const s = data.site || {}, c = (data.contact && data.contact.info) || {};
+    document.title = s.seoTitle || s.title || 'Hacienda San Andrés';
+    const set = (sel, attr, val) => { const e=document.querySelector(sel); if(e&&val) e.setAttribute(attr, val); };
+    set('meta[name="description"]','content', s.seoDescription);
+    set('meta[property="og:title"]','content', s.seoTitle || s.title);
+    set('meta[property="og:description"]','content', s.seoDescription);
+    if (s.ogImage){ let og=document.querySelector('meta[property="og:image"]'); if(!og){og=document.createElement('meta');og.setAttribute('property','og:image');document.head.appendChild(og);} og.setAttribute('content',s.ogImage); }
+    let kw = document.querySelector('meta[name="keywords"]'); if(!kw){kw=document.createElement('meta');kw.name='keywords';document.head.appendChild(kw);} kw.content = s.seoKeywords || '';
+    if (s.favicon) document.getElementById('favicon').href = s.favicon;
+    const ld = {
+      "@context":"https://schema.org","@type":"EventVenue","name":s.title||"Hacienda San Andrés",
+      "description":s.seoDescription||"","telephone":c.phone||"","email":c.email||"",
+      "address":{"@type":"PostalAddress","streetAddress":c.address||"","addressLocality":"Naucalpan","addressRegion":"Estado de México","addressCountry":"MX"}
+    };
+    let sc = document.getElementById('ld-json');
+    if(!sc){ sc=document.createElement('script'); sc.type='application/ld+json'; sc.id='ld-json'; document.head.appendChild(sc); }
+    sc.textContent = JSON.stringify(ld);
+  }
+  function applyTheme(){
+    const t = data.theme || {};
+    if (t.primary){ document.documentElement.style.setProperty('--ink', t.primary); }
+    if (t.accent){ document.documentElement.style.setProperty('--gold', t.accent); }
+  }
+
+  /* ---------- shared blocks ---------- */
+  function pagehero(o){
+    o = o || {};
+    return `<section class="pagehero">${frame(o.image,o.title,'frame--full')}<div class="pagehero__overlay"></div>
+      <div class="pagehero__inner wrap">${eyebrow('Hacienda San Andrés',true)}<h1 class="pagehero__title">${esc(o.title)}</h1>${o.subtitle?`<p class="pagehero__sub">${esc(o.subtitle)}</p>`:''}</div></section>`;
+  }
+
+  /* ---------- VIEWS ---------- */
+  function viewHome(){
+    const h = data.home || {}, hero = h.hero || {};
+    const slides = (hero.slides && hero.slides.length ? hero.slides : [{title:'Hacienda San Andrés',subtitle:''}]).map((sl,i)=>
+      `<div class="carousel__slide ${i===0?'active':''}">
+        ${frame(sl.image, sl.title, 'frame--full')}
+        <div class="hero__overlay"></div>
+        <div class="hero__content wrap">
+          ${eyebrow('Desde 1894 · Naucalpan',true)}
+          <h2 class="hero__title">${esc(sl.title)}</h2>
+          <p class="hero__sub">${esc(sl.subtitle)}</p>
+          <div class="btn-row">${btn(hero.primaryCtaLabel,hero.primaryCtaTarget,'light')}${btn(hero.secondaryCtaLabel,hero.secondaryCtaTarget,'outline-light')}</div>
+        </div>
+      </div>`).join('');
+    const heroBlock = `<section class="hero"><div class="carousel carousel--hero" data-carousel data-autoplay="6000">
+      <div class="carousel__track">${slides}</div>
+      <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">‹</button>
+      <button class="carousel__nav carousel__nav--next" aria-label="Siguiente">›</button>
+      <div class="carousel__dots"></div></div></section>`;
+
+    const emo = h.emotional ? `<section class="band--emotional"><div class="wrap"><p class="emotional">${esc(h.emotional.phrase)}</p></div></section>` : '';
+
+    const intro = h.intro || {};
+    const introBlock = `<section class="section"><div class="wrap split">
+      <div class="split__media reveal">${frame(intro.image,intro.title,'frame--arch')}</div>
+      <div class="split__body reveal">${eyebrow(intro.eyebrow)}<h2 class="h2">${esc(intro.title)}</h2><p class="lead">${esc(intro.text)}</p>${btn(intro.ctaLabel,intro.ctaTarget,'ghost')}</div>
+    </div></section>`;
+
+    const hi = (h.highlights||[]).map(c=>`<a class="hcard reveal" href="#${esc(c.target)}"><span class="hcard__icon">${ICON.arch}</span><h3 class="hcard__title">${esc(c.title)}</h3><p>${esc(c.text)}</p><span class="hcard__more">Ver más ${ICON.arrow}</span></a>`).join('');
+    const hiBlock = `<section class="section section--alt"><div class="wrap"><div class="grid grid-3">${hi}</div></div></section>`;
+
+    const ev = h.eventsSection || {};
+    const evCards = (ev.cards||[]).map(c=>`<a class="ecard reveal" href="#events">${frame(c.image,c.title,'frame--card')}<span class="ecard__label">${esc(c.title)}</span></a>`).join('');
+    const evBlock = `<section class="section"><div class="wrap"><header class="section__head center">${eyebrow(ev.eyebrow)}<h2 class="h2">${esc(ev.title)}</h2><p class="lead lead--center">${esc(ev.text)}</p></header><div class="grid grid-3 grid--events">${evCards}</div></div></section>`;
+
+    const exp = h.experience || {};
+    const expItems = (exp.items||[]).map(it=>`<li><strong>${esc(it.title)}</strong><span>${esc(it.text)}</span></li>`).join('');
+    const expBlock = `<section class="section section--ink"><div class="wrap split split--reverse">
+      <div class="split__body">${eyebrow(exp.eyebrow,true)}<h2 class="h2 h2--light">${esc(exp.title)}</h2><ul class="featurelist">${expItems}</ul></div>
+      <div class="split__media">${frame('','Experiencia Hacienda San Andrés','frame--arch')}</div></div></section>`;
+
+    const sc = h.spacesCarousel || {};
+    const spaceCards = (data.spaces.items||[]).filter(x=>x.active!==false).map(sp=>
+      `<a class="strip__card" href="#espacio-${esc(sp.slug)}">${frame(sp.image,sp.name,'frame--card')}<div class="strip__name">${esc(sp.name)}</div><div class="strip__meta">${esc(sp.type)} · ${esc(sp.capacity)}</div></a>`).join('');
+    const stripBlock = `<section class="section section--alt"><div class="wrap"><header class="section__head" style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:18px">
+        <div>${eyebrow(sc.eyebrow)}<h2 class="h2">${esc(sc.title)}</h2></div>
+        <div class="strip__nav"><button data-strip-prev aria-label="Anterior">‹</button><button data-strip-next aria-label="Siguiente">›</button></div>
+      </header><div class="strip-wrap"><div class="strip" data-strip>${spaceCards}</div></div></div></section>`;
+
+    const fc = h.finalCta || {};
+    const ctaBlock = `<section class="cta-final"><div class="wrap">${eyebrow('Visítanos',true)}<h2 class="h2 h2--light">${esc(fc.title)}</h2><p class="lead lead--light lead--center">${esc(fc.text)}</p><div class="btn-row center">${waBtn(fc.whatsappLabel)}${btn(fc.contactLabel,'contact','outline-light')}</div></div></section>`;
+
+    return heroBlock+emo+introBlock+hiBlock+evBlock+expBlock+stripBlock+ctaBlock;
+  }
+
+  function viewHistory(){
+    const hh = data.history || {};
+    const intro = hh.intro||{}, ed = hh.editorial||{}, cta = hh.cta||{};
+    const tl = (hh.timeline||[]).map(t=>`<li class="timeline__item reveal"><span class="timeline__year">${esc(t.year)}</span><div class="timeline__body"><h3>${esc(t.title)}</h3><p>${esc(t.text)}</p></div></li>`).join('');
+    const vals = (hh.values||[]).map((v,i)=>`<div class="vcard reveal"><span class="num">0${i+1}</span><h3>${esc(v.title)}</h3><p>${esc(v.text)}</p></div>`).join('');
+    const gal = (hh.gallery||[]).map(g=>frame(g.image,'Hacienda San Andrés','frame--card')).join('');
+    return pagehero(hh.hero)+
+      `<section class="section"><div class="wrap"><header class="section__head">${eyebrow(intro.eyebrow)}<h2 class="h2">${esc(intro.title)}</h2><p class="lead">${esc(intro.text)}</p></header></div></section>
+       <section class="section section--alt"><div class="wrap split"><div class="split__media reveal">${frame(ed.image,ed.title,'frame--arch')}</div><div class="split__body reveal"><h2 class="h2">${esc(ed.title)}</h2><p class="lead">${esc(ed.text)}</p></div></div></section>
+       <section class="section"><div class="wrap"><header class="section__head center">${eyebrow('Línea del tiempo')}<h2 class="h2">Nuestra trayectoria</h2></header><ol class="timeline" style="margin-inline:auto">${tl}</ol></div></section>
+       <section class="section section--alt"><div class="wrap"><header class="section__head center">${eyebrow('Lo que nos define')}<h2 class="h2">Nuestros valores</h2></header><div class="grid grid-4">${vals}</div></div></section>
+       <section class="section"><div class="wrap"><header class="section__head center">${eyebrow('Galería')}<h2 class="h2">Rincones con historia</h2></header><div class="grid grid-4">${gal}</div></div></section>
+       <section class="cta-final"><div class="wrap"><h2 class="h2 h2--light">${esc(cta.title)}</h2><p class="lead lead--light lead--center">${esc(cta.text)}</p><div class="btn-row center">${btn(cta.label,cta.target,'light')}${waBtn('WhatsApp')}</div></div></section>`;
+  }
+
+  function viewSpaces(){
+    const sp = data.spaces || {}, intro = sp.intro || {};
+    const groupOf = t => t==='Jardín'?'Jardines':(t==='Capilla'?'Capilla':'Salones');
+    const cards = (sp.items||[]).filter(x=>x.active!==false).map(s=>
+      `<article class="scard reveal" data-group="${esc(groupOf(s.type))}">
+        <a class="scard__media" href="#espacio-${esc(s.slug)}">${frame(s.image,s.name,'frame--card')}<span class="scard__type">${esc(s.type)}</span></a>
+        <div class="scard__body"><h3 class="scard__title">${esc(s.name)}</h3><p class="scard__cap">${esc(s.capacity)}</p><p class="scard__desc">${esc(s.shortDescription)}</p>
+          <div class="scard__actions">${btn('Ver espacio','espacio-'+s.slug,'ghost','')} ${waBtn('WhatsApp', s.whatsapp,'wa')}</div>
+        </div></article>`).join('');
+    const filters = ['Todos','Jardines','Salones','Capilla'].map((f,i)=>`<button class="${i===0?'active':''}" data-filter="${f}">${f}</button>`).join('');
+    return pagehero(sp.hero)+
+      `<section class="section"><div class="wrap"><header class="section__head">${eyebrow(intro.eyebrow)}<h2 class="h2">${esc(intro.title)}</h2><p class="lead">${esc(intro.text)}</p></header>
+        <div class="filters" data-filters>${filters}</div>
+        <div class="grid grid--spaces" data-grid>${cards}</div></div></section>`;
+  }
+
+  function viewSpace(slug){
+    const sp = (data.spaces.items||[]).find(x=>x.slug===slug && x.active!==false);
+    if (!sp) return `<section class="section"><div class="wrap center"><h2 class="h2">Espacio no encontrado</h2><p class="lead lead--center">El espacio que buscas no está disponible.</p><div class="btn-row center">${btn('Ver todos los espacios','spaces','solid')}</div></div></section>`;
+    const slides = (sp.carousel&&sp.carousel.length?sp.carousel:[{image:sp.image}]).map((c,i)=>`<div class="carousel__slide ${i===0?'active':''}">${frame(c.image,sp.name,'frame--full')}</div>`).join('');
+    const feats = (sp.features||[]).map(f=>`<li>${esc(f.item)}</li>`).join('');
+    const ideal = (sp.idealFor||[]).map(f=>`<li>${esc(f.item)}</li>`).join('');
+    const related = (data.spaces.items||[]).filter(x=>x.slug!==slug && x.active!==false).slice(0,4).map(s=>
+      `<a class="strip__card" href="#espacio-${esc(s.slug)}">${frame(s.image,s.name,'frame--card')}<div class="strip__name">${esc(s.name)}</div><div class="strip__meta">${esc(s.type)}</div></a>`).join('');
+    const vid = sp.video ? `<section class="section section--alt"><div class="wrap"><header class="section__head center">${eyebrow('Recorrido')}<h2 class="h2">${esc(sp.name)} en video</h2></header>${videoEmbed(sp.video)}</div></section>` : '';
+    const planLink = sp.plan ? `<div class="btn-row"><a class="btn btn--ghost btn--sm" href="${esc(sp.plan)}" target="_blank" rel="noopener">Ver plano</a></div>` : '';
+    return `<section class="detailhero">${frame(sp.image,sp.name,'frame--full')}<div class="detailhero__overlay"></div>
+        <div class="detailhero__inner wrap"><a class="detail-back" href="#spaces">‹ Todos los espacios</a><h1 class="detailhero__title">${esc(sp.name)}</h1>
+          <div class="detailhero__meta"><span>${esc(sp.type)}</span><span>${esc(sp.capacity)}</span></div></div></section>
+      <section class="section"><div class="wrap">
+        <div class="carousel carousel--media" data-carousel data-autoplay="0"><div class="carousel__track">${slides}</div>
+          <button class="carousel__nav carousel__nav--prev" aria-label="Anterior">‹</button><button class="carousel__nav carousel__nav--next" aria-label="Siguiente">›</button><div class="carousel__dots"></div></div>
+        <div class="detail-cols" style="margin-top:48px">
+          <div><h2 class="h2">Sobre este espacio</h2><p class="lead">${esc(sp.longDescription)}</p>
+            ${feats?`<h3 style="margin-top:34px;font-size:1.5rem">Características</h3><ul class="chips">${feats}</ul>`:''}
+            ${planLink}
+          </div>
+          <aside>
+            <div class="factbox"><h3>Datos rápidos</h3>
+              <div class="factrow"><span>Tipo</span><span>${esc(sp.type)}</span></div>
+              <div class="factrow"><span>Capacidad</span><span>${esc(sp.capacity)}</span></div>
+              ${ideal?`<div class="factrow" style="display:block"><span style="display:block;margin-bottom:8px">Ideal para</span><ul class="chips" style="margin-top:0">${ideal}</ul></div>`:''}
+            </div>
+            <div class="visitblock"><h3>Solicita tu cotización</h3><p style="color:rgba(255,255,255,.8)">Cuéntanos tu fecha y número de invitados y te enviamos una propuesta a la medida.</p><div class="btn-row">${waBtn('Cotizar por WhatsApp', sp.whatsapp,'wa')}${btn('Formulario','contact','light')}</div></div>
+          </aside>
+        </div>
+      </div></section>
+      ${vid}
+      ${related?`<section class="section section--alt"><div class="wrap"><header class="section__head" style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:18px"><div>${eyebrow('Sigue explorando')}<h2 class="h2">Otros espacios</h2></div><div class="strip__nav"><button data-strip-prev>‹</button><button data-strip-next>›</button></div></header><div class="strip-wrap"><div class="strip" data-strip>${related}</div></div></div></section>`:''}`;
+  }
+
+  function viewEvents(){
+    const e = data.events || {}, intro = e.intro||{}, tw = e.twoWays||{}, pr = e.process||{};
+    const types = (e.types||[]).map(t=>{
+      const ben = (t.benefits||[]).map(b=>`<li>${esc(b.item)}</li>`).join('');
+      return `<article class="tcard reveal">${frame(t.image,t.title,'frame--wide')}<div class="tcard__body"><h3 class="tcard__title">${esc(t.title)}</h3><p>${esc(t.description)}</p><ul class="tcard__benefits">${ben}</ul>${waBtn(t.ctaLabel,null,'gold')}</div></article>`;
+    }).join('');
+    const ways = (tw.options||[]).map(o=>`<div class="way reveal"><h3>${esc(o.title)}</h3><p>${esc(o.text)}</p></div>`).join('');
+    const steps = (pr.steps||[]).map((s,i)=>`<div class="step reveal"><div class="step__n">0${i+1}</div><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></div>`).join('');
+    return pagehero(e.hero)+
+      `<section class="section"><div class="wrap"><header class="section__head center">${eyebrow(intro.eyebrow)}<h2 class="h2">${esc(intro.title)}</h2><p class="lead lead--center">${esc(intro.text)}</p></header><div class="grid grid--types">${types}</div></div></section>
+       <section class="section section--alt"><div class="wrap"><header class="section__head center">${eyebrow('Flexibilidad total')}<h2 class="h2">${esc(tw.title)}</h2><p class="lead lead--center">${esc(tw.text)}</p></header><div class="ways">${ways}</div></div></section>
+       <section class="section"><div class="wrap"><header class="section__head center">${eyebrow('Cómo funciona')}<h2 class="h2">${esc(pr.title)}</h2></header><div class="steps">${steps}</div></div></section>
+       <section class="cta-final"><div class="wrap"><h2 class="h2 h2--light">¿Listo para reservar tu fecha?</h2><div class="btn-row center">${waBtn('Hablar con un asesor')}${btn('Ir a contacto','contact','outline-light')}</div></div></section>`;
+  }
+
+  function viewGallery(){
+    const g = data.gallery || {}, intro = g.intro||{};
+    const items = (g.items||[]).filter(x=>x.active!==false);
+    const cats = ['Todos', ...Array.from(new Set(items.map(i=>i.category).filter(Boolean)))];
+    const filters = cats.map((c,i)=>`<button class="${i===0?'active':''}" data-filter="${esc(c)}">${esc(c)}</button>`).join('');
+    const cells = items.map((it,idx)=>{
+      const isVid = it.type==='video' && it.video;
+      return `<figure class="masonry__item" data-group="${esc(it.category)}" data-idx="${idx}">
+        ${frame(it.image,it.title,'frame--card')}
+        ${it.category?`<span class="masonry__tag">${esc(it.category)}</span>`:''}
+        ${isVid?`<span class="play-badge">${ICON.play}</span>`:''}
+        <figcaption class="masonry__cap"><strong>${esc(it.title)}</strong><span>${esc(it.description)}</span></figcaption>
+      </figure>`;
+    }).join('');
+    window.__gallery = items;
+    return pagehero(g.hero)+
+      `<section class="section"><div class="wrap"><header class="section__head center">${eyebrow(intro.eyebrow)}<h2 class="h2">${esc(intro.title)}</h2><p class="lead lead--center">${esc(intro.text)}</p></header>
+        <div class="filters" data-gallery-filters>${filters}</div>
+        <div class="masonry" data-masonry>${cells}</div></div></section>`;
+  }
+
+  function viewTour(){
+    const t = data.virtualTour || {}, intro = t.intro||{}, cta = t.cta||{};
+    const main = t.mainVideo ? videoEmbed(t.mainVideo) : `<div class="frame frame--wide" style="display:grid;place-items:center"><span class="ph"><span class="ph__arch"></span><span class="ph__mark">HSA</span></span></div>`;
+    return pagehero(t.hero)+
+      `<section class="section"><div class="wrap"><header class="section__head center">${eyebrow('Recorrido virtual')}<h2 class="h2">${esc(intro.title)}</h2><p class="lead lead--center">${esc(intro.text)}</p></header>${main}</div></section>
+       <section class="cta-final"><div class="wrap"><h2 class="h2 h2--light">${esc(cta.title)}</h2><div class="btn-row center">${waBtn(cta.whatsappLabel)}${btn(cta.visitLabel,'contact','light')}</div></div></section>`;
+  }
+
+  function viewContact(){
+    const c = data.contact || {}, info = c.info||{}, vb = c.visitBlock||{};
+    const opts = (c.eventTypes||[]).map(o=>`<option value="${esc(o.item)}">${esc(o.item)}</option>`).join('');
+    const map = c.mapEmbed ? `<div class="mapframe"><iframe src="${esc(c.mapEmbed)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Hacienda San Andrés"></iframe></div>` : `<div class="mapframe">${ph('Mapa')}</div>`;
+    return pagehero(c.hero)+
+      `<section class="section"><div class="wrap"><div class="contact-grid">
+        <div>
+          <div class="infocards">
+            <div class="infocard"><div class="ic">${ICON.pin}</div><h4>Dirección</h4><p>${esc(info.address)}</p></div>
+            <div class="infocard"><div class="ic">${ICON.phone}</div><h4>Teléfono</h4><p><a href="tel:${esc((info.phone||'').replace(/\s/g,''))}">${esc(info.phone)}</a></p></div>
+            <div class="infocard"><div class="ic">${ICON.mail}</div><h4>Email</h4><p><a href="mailto:${esc(info.email)}">${esc(info.email)}</a></p></div>
+            <div class="infocard"><div class="ic">${ICON.clock}</div><h4>Horarios</h4><p>${esc(info.hours)}</p></div>
+          </div>
+          ${map}
+          <div class="visitblock"><h3>${esc(vb.title)}</h3><p style="color:rgba(255,255,255,.82)">${esc(vb.text)}</p><div class="btn-row">${waBtn(c.whatsappLabel)}</div></div>
+        </div>
+        <div>
+          <div class="form">
+            <h2 class="h2" style="font-size:2rem">${esc(c.formTitle)}</h2>
+            <p class="lead" style="margin-bottom:24px">${esc(c.formText)}</p>
+            <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?enviado=1">
+              <input type="hidden" name="form-name" value="contacto">
+              <p class="hp"><label>No llenar: <input name="bot-field"></label></p>
+              <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" type="text" name="nombre" required></div>
+              <div class="field-2">
+                <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" name="email" required></div>
+                <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" type="tel" name="telefono"></div>
+              </div>
+              <div class="field-2">
+                <div class="field"><label for="f-fecha">Fecha de evento</label><input id="f-fecha" type="date" name="fecha-evento"></div>
+                <div class="field"><label for="f-inv">Número de invitados</label><input id="f-inv" type="number" min="1" name="invitados"></div>
+              </div>
+              <div class="field"><label for="f-tipo">Tipo de evento</label><select id="f-tipo" name="tipo-evento"><option value="">Selecciona una opción</option>${opts}</select></div>
+              <div class="field"><label for="f-com">Comentarios</label><textarea id="f-com" name="comentarios"></textarea></div>
+              <button class="btn btn--solid" type="submit" style="width:100%">Enviar solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div></div></section>`;
+  }
+
+  /* ---------- carousels / strips / observers ---------- */
+  function initCarousels(scope){
+    scope.querySelectorAll('[data-carousel]').forEach(car=>{
+      const slides = Array.from(car.querySelectorAll('.carousel__slide'));
+      if (!slides.length) return;
+      const dotsWrap = car.querySelector('.carousel__dots');
+      let idx = slides.findIndex(s=>s.classList.contains('active')); if(idx<0) idx=0;
+      const dots = slides.map((_,i)=>{ const b=document.createElement('button'); b.setAttribute('aria-label','Ir a '+(i+1)); if(i===idx)b.classList.add('active'); b.onclick=()=>go(i); dotsWrap&&dotsWrap.appendChild(b); return b; });
+      function go(n){ slides[idx].classList.remove('active'); dots[idx]&&dots[idx].classList.remove('active'); idx=(n+slides.length)%slides.length; slides[idx].classList.add('active'); dots[idx]&&dots[idx].classList.add('active'); }
+      const prev=car.querySelector('.carousel__nav--prev'), next=car.querySelector('.carousel__nav--next');
+      prev&&(prev.onclick=()=>{go(idx-1);reset();});
+      next&&(next.onclick=()=>{go(idx+1);reset();});
+      if (slides.length<2){ prev&&(prev.style.display='none'); next&&(next.style.display='none'); dotsWrap&&(dotsWrap.style.display='none'); }
+      let timer=null; const delay=parseInt(car.getAttribute('data-autoplay'),10)||0;
+      function start(){ if(delay>0 && slides.length>1) timer=setInterval(()=>go(idx+1),delay); }
+      function reset(){ clearInterval(timer); start(); }
+      car.addEventListener('mouseenter',()=>clearInterval(timer));
+      car.addEventListener('mouseleave',start);
+      start();
+    });
+    scope.querySelectorAll('[data-strip]').forEach(strip=>{
+      const wrap = strip.closest('section');
+      const prev = wrap.querySelector('[data-strip-prev]'), next = wrap.querySelector('[data-strip-next]');
+      const step = () => (strip.querySelector('.strip__card')?.offsetWidth || 320) + 22;
+      prev&&(prev.onclick=()=>strip.scrollBy({left:-step(),behavior:'smooth'}));
+      next&&(next.onclick=()=>strip.scrollBy({left:step(),behavior:'smooth'}));
+    });
+  }
+  function initFilters(scope){
+    const fl = scope.querySelector('[data-filters]'); const grid = scope.querySelector('[data-grid]');
+    if (fl && grid){
+      fl.addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b)return;
+        fl.querySelectorAll('button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+        const f=b.getAttribute('data-filter');
+        grid.querySelectorAll('[data-group]').forEach(card=>{ card.style.display=(f==='Todos'||card.getAttribute('data-group')===f)?'':'none'; });
+      });
+    }
+    const gf = scope.querySelector('[data-gallery-filters]'); const mas = scope.querySelector('[data-masonry]');
+    if (gf && mas){
+      gf.addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b)return;
+        gf.querySelectorAll('button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+        const f=b.getAttribute('data-filter');
+        mas.querySelectorAll('[data-group]').forEach(card=>{ card.style.display=(f==='Todos'||card.getAttribute('data-group')===f)?'':'none'; });
+      });
+      mas.querySelectorAll('.masonry__item').forEach(it=> it.onclick=()=>openLightbox(window.__gallery||[], parseInt(it.getAttribute('data-idx'),10)));
+    }
+  }
+  function initReveal(scope){
+    const els = scope.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)){ els.forEach(e=>e.classList.add('in')); return; }
+    const io = new IntersectionObserver((ents)=>ents.forEach(en=>{ if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);} }),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(e=>io.observe(e));
+  }
+
+  /* ---------- lightbox ---------- */
+  let lbItems=[], lbIdx=0;
+  const lb = document.getElementById('lightbox'), lbStage=document.getElementById('lightbox-stage');
+  function openLightbox(items, i){ lbItems=items||[]; lbIdx=i||0; if(!lbItems.length)return; renderLB(); lb.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeLightbox(){ lb.classList.remove('open'); lbStage.innerHTML=''; document.body.style.overflow=''; }
+  function renderLB(){ const it=lbItems[lbIdx]||{}; const media = (it.type==='video'&&it.video)||(it.video&&!it.image) ? videoEmbed(it.video) : (it.image?`<img src="${esc(it.image)}" alt="${esc(it.title||'')}" onerror="App.phFix(this)">`:ph(it.title||'')); lbStage.innerHTML = `${media}${it.title?`<p class="lightbox__cap">${esc(it.title)}</p>`:''}`; }
+  function lbMove(n){ if(!lbItems.length)return; lbIdx=(lbIdx+n+lbItems.length)%lbItems.length; renderLB(); }
+  lb.querySelector('[data-lb-close]').onclick=closeLightbox;
+  lb.querySelector('[data-lb-prev]').onclick=()=>lbMove(-1);
+  lb.querySelector('[data-lb-next]').onclick=()=>lbMove(1);
+  lb.addEventListener('click',e=>{ if(e.target===lb) closeLightbox(); });
+  document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open'))return; if(e.key==='Escape')closeLightbox(); if(e.key==='ArrowLeft')lbMove(-1); if(e.key==='ArrowRight')lbMove(1); });
+
+  /* ---------- router ---------- */
+  function setActive(view){
+    document.querySelectorAll('[data-route]').forEach(a=> a.classList.toggle('active', a.getAttribute('data-route')===view));
+  }
+  function render(){
+    const raw = (location.hash || '#home').replace(/^#/,'');
+    let html='', view='home';
+    if (raw.startsWith('espacio-')){ view='spaces'; html = viewSpace(raw.slice(8)); }
+    else {
+      view = ROUTES[raw] || 'home';
+      html = ({home:viewHome,history:viewHistory,spaces:viewSpaces,events:viewEvents,gallery:viewGallery,tour:viewTour,contact:viewContact}[view])();
+    }
+    main.innerHTML = html;
+    setActive(view);
+    initCarousels(main); initFilters(main); initReveal(main);
+    window.scrollTo({top:0,behavior:'auto'});
+    closeMenu();
+  }
+
+  /* ---------- boot ---------- */
+  async function init(){
+    try{
+      const r = await fetch('content.json', {cache:'no-cache'});
+      if(!r.ok) throw new Error('HTTP '+r.status);
+      data = await r.json();
+    }catch(err){
+      console.error('No se pudo cargar content.json', err);
+      main.innerHTML = `<section class="section"><div class="wrap center"><h2 class="h2">Hacienda San Andrés</h2><p class="lead lead--center">El contenido se está actualizando. Vuelve a intentarlo en unos momentos.</p></div></section>`;
+      return;
+    }
+    applyTheme(); applySEO(); renderHeader(); renderFooter(); renderWhatsApp(); renderPromo();
+    window.addEventListener('hashchange', render);
+    render();
+  }
+
+  return { init, phFix };
+})();
+document.addEventListener('DOMContentLoaded', App.init);
+</script>
+</body>
+</html>
