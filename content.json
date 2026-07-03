@@ -743,11 +743,11 @@
     "socials": [
       {
         "label": "Facebook",
-        "link": "#https://www.facebook.com/share/1AxC5jvQmz/?mibextid=wwXIfr"
+        "link": "https://www.facebook.com/share/1AxC5jvQmz/?mibextid=wwXIfr"
       },
       {
         "label": "Instagram",
-        "link": "#https://www.instagram.com/haciendasanandres_/"
+        "link": "https://www.instagram.com/haciendasanandres_/"
       }
     ],
     "copyright": "Hacienda San Andrés. Todos los derechos reservados.",
