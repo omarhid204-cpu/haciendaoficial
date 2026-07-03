@@ -218,7 +218,7 @@
           }
         ],
         "shortDescription": "El jardín más extenso de la hacienda, abierto y luminoso, para celebraciones numerosas.",
-        "longDescription": "Los Campos es nuestro jardín de mayor capacidad. Su superficie abierta permite montajes amplios, ceremonias al aire libre y grandes recepciones. La naturaleza es la protagonista y enmarca cada momento de tu evento.",
+        "longDescription": "Los Campos, es un espacio creado como jardín para bodas, jardín para XV Años y jardín para Graduaciones, con capacidad de hasta 400 invitados. La naturaleza es la protagonista y enmarca cada momento de tu evento. \n\nGracias a la decoración de las fuentes y a la presencia de una gran variedad de vegetación, el jardín es ideal para eventos de día o noche.\n\n​\n\nIncluye:\n\nCarpa con 4 calentadores.\nPista de baile.\nEstrado para músicos.\nIluminación arquitectónica. \n\nPersonal de guardarropa y personal de baños. \n\nPersonal de seguridad.",
         "active": true,
         "plan": "",
         "name": "Jardín Los Campos",
@@ -235,22 +235,31 @@
             "item": "Eventos masivos"
           }
         ],
-        "capacity": "Hasta 500 invitados",
+        "capacity": "Hasta 400 invitados",
         "type": "Jardín",
         "video": "",
         "image": "",
         "features": [
           {
-            "item": "Mayor capacidad al aire libre"
+            "item": "Carpa con 4 calentadores"
           },
           {
             "item": "Amplias áreas verdes"
           },
           {
-            "item": "Espacio para ceremonia y recepción"
+            "item": "Pista de baile"
           },
           {
-            "item": "Vistas naturales para fotografía"
+            "item": "Iluminación arquitectónica. "
+          },
+          {
+            "item": "Personal de guardarropa y personal de baños. "
+          },
+          {
+            "item": "Personal de seguridad."
+          },
+          {
+            "item": "Estrado para músicos."
           }
         ]
       },
