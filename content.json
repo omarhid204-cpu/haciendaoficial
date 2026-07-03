@@ -870,7 +870,11 @@
         },
         {
           "title": "XV años",
-          "image": ""
+          "image": "/images/aa071ddd-7b19-44db-8dfe-89f43b125926.png"
+        },
+        {
+          "title": "Cumpleaños",
+          "image": "/images/6abbf2f4-42dc-4d72-8551-50ced7547f1e.png"
         },
         {
           "title": "Graduaciones",
@@ -878,14 +882,10 @@
         },
         {
           "title": "Bautizos",
-          "image": ""
+          "image": "/images/4ff449ab-c1e3-489d-99c2-494b59925bd9.png"
         },
         {
           "title": "Empresariales",
-          "image": ""
-        },
-        {
-          "title": "Cumpleaños",
           "image": ""
         }
       ]
