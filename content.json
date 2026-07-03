@@ -454,15 +454,6 @@
       },
       {
         "active": true,
-        "title": "Montaje corporativo",
-        "description": "Evento empresarial en Los Balcones.",
-        "category": "Empresariales",
-        "type": "image",
-        "image": "",
-        "video": ""
-      },
-      {
-        "active": true,
         "title": "Interior de la capilla",
         "description": "Ceremonia religiosa en La Capilla.",
         "category": "Capilla",
