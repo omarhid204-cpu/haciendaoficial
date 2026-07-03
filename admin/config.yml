@@ -1,0 +1,438 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: es
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "contenido"
+    label: "Contenido del sitio"
+    files:
+      - name: "home"
+        label: "Página completa"
+        file: "content.json"
+        description: "Edita todo el contenido del sitio web desde aquí."
+        fields:
+          # ───────────── SITIO / SEO ─────────────
+          - label: "Sitio y SEO"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image", required: false }
+              - { label: "Alto del logo (px)", name: "logoHeight", widget: "number", value_type: "int", default: 88, min: 40, max: 140, required: false, hint: "Tamaño del logo en escritorio, en píxeles. Recomendado entre 70 y 110. En celular se ajusta solo." }
+              - { label: "Nombre del sitio", name: "title", widget: "string" }
+              - { label: "Título SEO", name: "seoTitle", widget: "string" }
+              - { label: "Descripción SEO", name: "seoDescription", widget: "text" }
+              - { label: "Palabras clave SEO", name: "seoKeywords", widget: "text" }
+              - { label: "Imagen para compartir (Open Graph)", name: "ogImage", widget: "image", required: false }
+              - { label: "Favicon", name: "favicon", widget: "image", required: false }
+
+          # ───────────── TEMA / COLORES ─────────────
+          - label: "Tema (colores)"
+            name: "theme"
+            widget: "object"
+            fields:
+              - { label: "Color primario", name: "primary", widget: "string", hint: "Color en formato hexadecimal, por ejemplo #14233B" }
+              - { label: "Color de acento (dorado)", name: "accent", widget: "string", hint: "Color en formato hexadecimal, por ejemplo #B68D4C" }
+
+          # ───────────── NAVEGACIÓN ─────────────
+          - label: "Navegación"
+            name: "navigation"
+            widget: "list"
+            fields:
+              - { label: "Etiqueta", name: "label", widget: "string" }
+              - { label: "Destino", name: "target", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+
+          # ───────────── PROMOCIÓN DEL MES ─────────────
+          - label: "Promoción del mes"
+            name: "promotion"
+            widget: "object"
+            fields:
+              - { label: "Activa", name: "active", widget: "boolean", default: true }
+              - { label: "Texto del botón", name: "buttonLabel", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Descripción", name: "description", widget: "text" }
+              - { label: "Imagen", name: "image", widget: "image", required: false }
+              - { label: "Texto del botón de acción", name: "ctaLabel", widget: "string" }
+              - { label: "Enlace del botón de acción", name: "ctaLink", widget: "string" }
+
+          # ───────────── WHATSAPP ─────────────
+          - label: "WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            fields:
+              - { label: "Activo", name: "active", widget: "boolean", default: true }
+              - { label: "Número", name: "number", widget: "string", hint: "Con código de país, por ejemplo 525553572833" }
+              - { label: "Mensaje predefinido", name: "message", widget: "text" }
+              - { label: "Texto de la burbuja", name: "bubbleText", widget: "string" }
+              - { label: "Mostrar burbuja", name: "showBubble", widget: "boolean", default: true }
+
+          # ───────────── HOME ─────────────
+          - label: "Inicio (Home)"
+            name: "home"
+            widget: "object"
+            fields:
+              - label: "Hero (carrusel principal)"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - label: "Slides"
+                    name: "slides"
+                    widget: "list"
+                    fields:
+                      - { label: "Imagen", name: "image", widget: "image", required: false }
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Subtítulo", name: "subtitle", widget: "string" }
+                  - { label: "Texto botón principal", name: "primaryCtaLabel", widget: "string" }
+                  - { label: "Destino botón principal", name: "primaryCtaTarget", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+                  - { label: "Texto botón secundario", name: "secondaryCtaLabel", widget: "string" }
+                  - { label: "Destino botón secundario", name: "secondaryCtaTarget", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+              - label: "Frase emocional"
+                name: "emotional"
+                widget: "object"
+                fields:
+                  - { label: "Frase", name: "phrase", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Texto del botón", name: "ctaLabel", widget: "string" }
+                  - { label: "Destino del botón", name: "ctaTarget", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+              - label: "Destacados (3 columnas)"
+                name: "highlights"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Destino", name: "target", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+              - label: "Sección de eventos"
+                name: "eventsSection"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - label: "Tarjetas"
+                    name: "cards"
+                    widget: "list"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Imagen", name: "image", widget: "image", required: false }
+              - label: "Experiencia"
+                name: "experience"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - label: "Elementos"
+                    name: "items"
+                    widget: "list"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Texto", name: "text", widget: "text" }
+              - label: "Carrusel de espacios"
+                name: "spacesCarousel"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+              - label: "Llamado final"
+                name: "finalCta"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Texto botón WhatsApp", name: "whatsappLabel", widget: "string" }
+                  - { label: "Texto botón contacto", name: "contactLabel", widget: "string" }
+
+          # ───────────── NUESTRA HISTORIA ─────────────
+          - label: "Nuestra Historia"
+            name: "history"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Bloque editorial"
+                name: "editorial"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+              - label: "Línea de tiempo"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - { label: "Año", name: "year", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Valores"
+                name: "values"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Galería"
+                name: "gallery"
+                widget: "list"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+              - label: "Llamado a la acción"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - { label: "Texto del botón", name: "label", widget: "string" }
+                  - { label: "Destino", name: "target", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+
+          # ───────────── ESPACIOS ─────────────
+          - label: "Espacios"
+            name: "spaces"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Lista de espacios"
+                name: "items"
+                widget: "list"
+                label_singular: "Espacio"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Activo", name: "active", widget: "boolean", default: true }
+                  - { label: "Nombre", name: "name", widget: "string" }
+                  - { label: "Slug", name: "slug", widget: "string", hint: "Identificador para la URL, por ejemplo jardin-la-cupula" }
+                  - { label: "Tipo", name: "type", widget: "select", options: ["Jardín", "Salón", "Capilla"] }
+                  - { label: "Capacidad", name: "capacity", widget: "string" }
+                  - { label: "Imagen principal", name: "image", widget: "image", required: false }
+                  - label: "Carrusel"
+                    name: "carousel"
+                    widget: "list"
+                    fields:
+                      - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Descripción corta", name: "shortDescription", widget: "text" }
+                  - { label: "Descripción larga", name: "longDescription", widget: "text" }
+                  - label: "Características"
+                    name: "features"
+                    widget: "list"
+                    fields:
+                      - { label: "Característica", name: "item", widget: "string" }
+                  - label: "Ideal para"
+                    name: "idealFor"
+                    widget: "list"
+                    fields:
+                      - { label: "Elemento", name: "item", widget: "string" }
+                  - { label: "Video (opcional)", name: "video", widget: "string", required: false, hint: "URL de YouTube, Vimeo o archivo .mp4" }
+                  - { label: "Plano o PDF (opcional)", name: "plan", widget: "file", required: false }
+                  - { label: "Enlace de WhatsApp", name: "whatsapp", widget: "string" }
+
+          # ───────────── EVENTOS ─────────────
+          - label: "Eventos"
+            name: "events"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Tipos de evento"
+                name: "types"
+                widget: "list"
+                label_singular: "Tipo de evento"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Descripción", name: "description", widget: "text" }
+                  - label: "Beneficios"
+                    name: "benefits"
+                    widget: "list"
+                    fields:
+                      - { label: "Beneficio", name: "item", widget: "string" }
+                  - { label: "Texto del botón", name: "ctaLabel", widget: "string" }
+              - label: "Dos formas de celebrar"
+                name: "twoWays"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+                  - label: "Opciones"
+                    name: "options"
+                    widget: "list"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Texto", name: "text", widget: "text" }
+              - label: "Proceso"
+                name: "process"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - label: "Pasos"
+                    name: "steps"
+                    widget: "list"
+                    fields:
+                      - { label: "Título", name: "title", widget: "string" }
+                      - { label: "Texto", name: "text", widget: "text" }
+
+          # ───────────── GALERÍA ─────────────
+          - label: "Galería"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Antetítulo", name: "eyebrow", widget: "string" }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - label: "Elementos de la galería"
+                name: "items"
+                widget: "list"
+                label_singular: "Elemento"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Activo", name: "active", widget: "boolean", default: true }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "text" }
+                  - { label: "Categoría", name: "category", widget: "select", options: ["Jardines", "Salones", "Bodas", "XV años", "Empresariales", "Capilla", "Montajes"] }
+                  - { label: "Tipo", name: "type", widget: "select", options: ["image", "video"], default: "image" }
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Video (opcional)", name: "video", widget: "string", required: false, hint: "URL de YouTube, Vimeo o archivo .mp4" }
+
+          # ───────────── VISITA VIRTUAL ─────────────
+          - label: "Visita Virtual"
+            name: "virtualTour"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Introducción"
+                name: "intro"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+              - { label: "Video del recorrido", name: "mainVideo", widget: "string", required: false, hint: "Pega aquí el enlace de tu video de YouTube o Vimeo (o la URL de un archivo .mp4). Ese video se mostrará en la sección de Visita Virtual." }
+              - label: "Llamado a la acción"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto botón WhatsApp", name: "whatsappLabel", widget: "string" }
+                  - { label: "Texto botón visita", name: "visitLabel", widget: "string" }
+
+          # ───────────── CONTACTO ─────────────
+          - label: "Contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Hero"
+                name: "hero"
+                widget: "object"
+                fields:
+                  - { label: "Imagen", name: "image", widget: "image", required: false }
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Subtítulo", name: "subtitle", widget: "string" }
+              - label: "Información de contacto"
+                name: "info"
+                widget: "object"
+                fields:
+                  - { label: "Dirección", name: "address", widget: "string" }
+                  - { label: "Teléfono", name: "phone", widget: "string" }
+                  - { label: "Email", name: "email", widget: "string" }
+                  - { label: "Horarios", name: "hours", widget: "string" }
+              - { label: "Mapa de Google (embed)", name: "mapEmbed", widget: "string", hint: "URL del mapa embebido de Google Maps" }
+              - { label: "Título del formulario", name: "formTitle", widget: "string" }
+              - { label: "Texto del formulario", name: "formText", widget: "text" }
+              - label: "Tipos de evento (formulario)"
+                name: "eventTypes"
+                widget: "list"
+                fields:
+                  - { label: "Tipo", name: "item", widget: "string" }
+              - { label: "Texto botón WhatsApp", name: "whatsappLabel", widget: "string" }
+              - label: "Bloque agenda tu visita"
+                name: "visitBlock"
+                widget: "object"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Texto", name: "text", widget: "text" }
+
+          # ───────────── FOOTER ─────────────
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image", required: false }
+              - { label: "Eslogan", name: "tagline", widget: "text" }
+              - { label: "Dirección", name: "address", widget: "string" }
+              - { label: "Teléfono", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Horarios", name: "hours", widget: "string" }
+              - label: "Redes sociales"
+                name: "socials"
+                widget: "list"
+                fields:
+                  - { label: "Nombre", name: "label", widget: "string" }
+                  - { label: "Enlace", name: "link", widget: "string" }
+              - label: "Enlaces rápidos"
+                name: "quickLinks"
+                widget: "list"
+                fields:
+                  - { label: "Etiqueta", name: "label", widget: "string" }
+                  - { label: "Destino", name: "target", widget: "select", options: ["home", "history", "spaces", "events", "gallery", "tour", "contact"] }
+              - { label: "Texto aviso de privacidad", name: "privacy", widget: "string" }
+              - { label: "Copyright", name: "copyright", widget: "string" }
