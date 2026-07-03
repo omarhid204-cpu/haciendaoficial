@@ -61,7 +61,7 @@
     }
   },
   "promotion": {
-    "active": true,
+    "active": false,
     "buttonLabel": "Promoción del mes",
     "title": "Promoción de temporada",
     "description": "Reserva tu fecha de boda o XV años con seis meses de anticipación y recibe un paquete de cortesías: prueba de menú para dos personas, hora extra de jardín y montaje de mesa principal sin costo.",
