@@ -429,7 +429,7 @@
         "active": true,
         "title": "Arcos de cantera",
         "description": "Detalle del Salón Los Arcos.",
-        "category": "Salones",
+        "category": "Montajes",
         "type": "image",
         "image": "/images/68d53dd6-292c-4c41-baa3-9ca20551f88f.jpg",
         "video": ""
@@ -465,7 +465,7 @@
         "active": true,
         "title": "Mesa principal",
         "description": "Montaje de banquete para boda.",
-        "category": "Montajes",
+        "category": "Salones",
         "type": "image",
         "image": "/images/35d30e3b-7e05-4dc3-92c8-3d99f851bec6.png",
         "video": ""
